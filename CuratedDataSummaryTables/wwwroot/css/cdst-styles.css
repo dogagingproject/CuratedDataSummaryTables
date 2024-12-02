@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+	background-color: #e4e0f5;
+	color: black;
+	font-family: Roboto, 'Source Sans Pro', sans-serif, Arial;
+	line-height: 1.42857143;
+}
+
+.body-container {
+	max-width: 940px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+h3 {
+	font-size: 0.98em;
+}
+
+p {
+	font-size: 14px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+/*===== TABLE OF CONTENTS =====*/
+#toc {
+	padding-top: 10px;
+}
+
+
+/*====== TABLES =====*/
+.table-title
+{
+	margin-top: 50px;
+	/* padding-left: 15px; */
+}
+
+.table-container {
+	width: 100%;
+	background-color: white;
+	padding: 10px 15px 10px 15px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, and shadow color */
+	margin-bottom: 10px;
+}
+
+table {
+	background-color: white;
+	font-size: 13px;
+	width: 100%;
+	margin-top: 0.5em !important;
+}
+
+/* Caption at top of table */
+thead > tr:first-child > td {
+	font-weight: bold;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+/* Column headers */
+thead th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	background-color: rgb(220, 220, 220);
+}
+/* thead > tr:nth-of-type(2) th {	
+} */
+
+tbody tr {
+	line-height: 1.8;
+}
+
+tbody > tr:first-child > td:first-child {
+	padding-top: 10px; /* add space between column header and first data row */
+}
+
+/* Give more space to first column, 2nd column will also align across tables
+TODO probably only applies to some pages??? */
+td:first-child, th:first-child {
+	width: 75%;
+}
+
+
+/* TODO FIX INDENT */
+/* Subheader data rows */
+span.row-heading {
+	padding-left: 6px;
+	 /* Less ident for subheader rows */
+	font-weight: bold;
+}
+
+/* Non-header data rows */
+/* tbody td { */
+tbody > tr:not(:has(span.row-heading)) td {
+ 	padding-left: 15px; /* Indent non-header rows */
+}
+
+
+
+
+
+/* border between caption and column headers; set from htmlTable::htmlTable() */
+thead > tr > th {
+	/* border-top: none !important; */
+	/* border-bottom: none !important; */
+}
+
+tr > td { /* border between table body and footnote */
+	/* border-bottom: none !important; */
+}
+
+
+/*===== FOOTER =====*/
+div.cdst-footer {
+	text-align: center;
+	font-size: 13px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}

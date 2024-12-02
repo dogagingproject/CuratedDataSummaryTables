@@ -1,0 +1,5571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HLES_Environment</title>
+	<link href="../../css/cdst-styles.css" rel="stylesheet">
+	<!-- custom template marker -->
+</head>
+<body>
+	<div class="body-container">
+		<h1>
+About the Environment Survey
+</h1>
+<p>The questions in the Environment Survey focus on the dog’s physical
+and built environment, chemical environment and exposures, and social
+environment. In Terra, these owner-reported values are paired with
+zipcode-specific environment data, including census tract-level
+sociodemographic and economic indicators, air pollution indicators,
+climate and weather variables, and walkability scores.<br><br>Survey
+Instrument: <a
+href="https://github.com/dogagingproject/dataRelease/blob/master/Survey_Instruments/HLES/DAP_HLES_04_Environment.pdf">HLES
+Environment</a></p>
+<div id="toc" class="section level2">
+<h2>
+Table of Contents
+</h2>
+<p><a href="#measures-of-residential-mobility">Measures of residential
+mobility</a><br />
+<a href="#about-the-dog&#39;s-primary-address">About the dog’s primary
+address</a><br />
+<a href="#chemical-environment:-air-and-water">Chemical environment: air
+and water</a><br />
+<a href="#built-environment:-flooring-and-stairs">Built environment:
+flooring and stairs</a><br />
+<a href="#about-the-dog&#39;s-use-of-toys">About the dog’s use of
+toys</a><br />
+<a href="#sleeping-patterns-and-locations">Sleeping patterns and
+locations</a><br />
+<a href="#interactions-with-hazardous-materials">Interactions with
+hazardous materials</a><br />
+<a href="#interactions-with-other-animals">Interactions with other
+animals</a><br />
+<a href="#about-the-dog&#39;s-daily-routine">About the dog’s daily
+routine</a><br />
+<a href="#about-the-dog&#39;s-yard">About the dog’s yard</a><br />
+<a href="#neighborhood-characteristics">Neighborhood
+characteristics</a><br />
+<a href="#neighborhood-social-environment">Neighborhood social
+environment</a><br />
+<a href="#extralocal-environmental-exposure">Extralocal environmental
+exposure</a></p>
+</div>
+<!--- knit those table chunk statements -->
+<h3 class="table-title">
+Measures of residential
+mobility<a id="measures-of-residential-mobility"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Other places the dog has lived</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_1_1 Number of former residences for the dog <br> [de_lifetime_residence_count]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>26817 (57%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>11157 (24%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>4594 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>2133 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>1155 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>637 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>404 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>197 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>119 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>81 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>131 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>19 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_1_2 Number of former ZIP codes <br> [de_past_residence_zip_count]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>32187 (68%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>8000 (17%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>4020 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>1667 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>807 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>375 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>195 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>89 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>40 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>22 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>42 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_1_3 Number of former countries of residence <br> [de_past_residence_country_count]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>46823 (99%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>560 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>42 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>10</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>1 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+About the dog’s primary
+address<a id="about-the-dog's-primary-address"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Characteristics of the dog's home</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_2_1 Type of area <br> [de_home_area_type]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Suburban (residing outside of an urban center</td>
+<td style='text-align: left;'>28882 (61%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rural (living outside of the city and suburbs</td>
+<td style='text-align: left;'>10017 (21%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Urban (residing inside the city)</td>
+<td style='text-align: left;'>8545 (18%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_2_2 Type of home <br> [de_home_type]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Single family</td>
+<td style='text-align: left;'>39264 (83%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Condo or townhome</td>
+<td style='text-align: left;'>3232 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Apartment</td>
+<td style='text-align: left;'>3012 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Multifamily (such as a duplex)</td>
+<td style='text-align: left;'>1319 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mobile home or RV</td>
+<td style='text-align: left;'>443 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>174 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_2_3 Year the home was built <br> [de_home_construction_decade]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>< 1900</td>
+<td style='text-align: left;'>1505 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1900s</td>
+<td style='text-align: left;'>1212 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1910s</td>
+<td style='text-align: left;'>1012 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1920s</td>
+<td style='text-align: left;'>2283 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1930s</td>
+<td style='text-align: left;'>1176 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1940s</td>
+<td style='text-align: left;'>1896 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1950s</td>
+<td style='text-align: left;'>4424 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1960s</td>
+<td style='text-align: left;'>3872 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1970s</td>
+<td style='text-align: left;'>5420 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1980s</td>
+<td style='text-align: left;'>6013 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1990s</td>
+<td style='text-align: left;'>6240 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2000s</td>
+<td style='text-align: left;'>6665 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2010-current</td>
+<td style='text-align: left;'>5726 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_2_4 Number of years in home <br> [de_home_years_lived_in]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Less than 1</td>
+<td style='text-align: left;'>4107 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>2895 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>4041 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>3625 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>2652 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>2682 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>1908 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>1576 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>1380 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>853 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>1644 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>939 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>1062 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>932 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>932 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15+</td>
+<td style='text-align: left;'>16216 (34%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_2_5 Square footage of the home <br> [de_home_square_footage_bin]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>< 500</td>
+<td style='text-align: left;'>398 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>500 - 1000</td>
+<td style='text-align: left;'>4048 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1000 - 1500</td>
+<td style='text-align: left;'>9427 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1500 - 2000</td>
+<td style='text-align: left;'>10571 (22%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2000 - 2500</td>
+<td style='text-align: left;'>9268 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2500 - 3000</td>
+<td style='text-align: left;'>5197 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3000 - 3500</td>
+<td style='text-align: left;'>3946 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3500 - 4000</td>
+<td style='text-align: left;'>1821 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4000 - 4500</td>
+<td style='text-align: left;'>1180 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4500 - 5000</td>
+<td style='text-align: left;'>467 (1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>> 5000</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>1121 (2%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Chemical environment: air and
+water<a id="chemical-environment:-air-and-water"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Fuel sources in the home</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_3_1 Primary heating fuel source <br> [de_primary_heat_fuel]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Natural gas</td>
+<td style='text-align: left;'>25158 (53%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Electric</td>
+<td style='text-align: left;'>15183 (32%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Propane</td>
+<td style='text-align: left;'>2453 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Oil</td>
+<td style='text-align: left;'>2308 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>945 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Wood</td>
+<td style='text-align: left;'>862 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>535 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_3_2 Presence of a secondary heating method <br> [de_secondary_heat_fuel_used]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>35282 (74%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>10756 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>1406 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=10,756)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_3_3 Secondary heating fuel source <br> [de_secondary_heat_fuel]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Wood</td>
+<td style='text-align: left;'>3990 (37%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Electric</td>
+<td style='text-align: left;'>3015 (28%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Natural gas</td>
+<td style='text-align: left;'>1745 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Propane</td>
+<td style='text-align: left;'>1273 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>480 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Oil</td>
+<td style='text-align: left;'>241 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_3_4 Primary cooking fuel source <br> [de_primary_stove_fuel]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Electric</td>
+<td style='text-align: left;'>23409 (49%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Natural gas</td>
+<td style='text-align: left;'>20364 (43%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Propane</td>
+<td style='text-align: left;'>3403 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>112 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Oil</td>
+<td style='text-align: left;'>63 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>56 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Wood</td>
+<td style='text-align: left;'>37 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_3_5 Presence of a secondary cooking method <br> [de_secondary_stove_fuel_used]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>39016 (82%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>8257 (17%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>171 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=8,257)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_3_6 Secondary cooking fuel source <br> [de_secondary_stove_fuel]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Electric</td>
+<td style='text-align: left;'>4164 (50%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Propane</td>
+<td style='text-align: left;'>2766 (33%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>509 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Natural gas</td>
+<td style='text-align: left;'>444 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Wood</td>
+<td style='text-align: left;'>366 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Oil</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>2 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+About the dog's drinking water</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_4_1 Source of drinking water <br> [de_drinking_water_source]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Municipal</td>
+<td style='text-align: left;'>35903 (76%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Non-municipal well water (treated/filtered)</td>
+<td style='text-align: left;'>5511 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Non-municipal well water (untreated/unfiltered)</td>
+<td style='text-align: left;'>3098 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bottled or commercially delivered</td>
+<td style='text-align: left;'>1482 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>1290 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Don't know</td>
+<td style='text-align: left;'>160 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_4_2 Presence of a water filtration system <br> [de_drinking_water_is_filtered]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>32264 (68%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>15004 (32%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>176 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=24,188)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_4_3 Type of pipes, if known <br> [de_pipe_type]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Copper or metal</td>
+<td style='text-align: left;'>12448 (51%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>PVC or plastic</td>
+<td style='text-align: left;'>11173 (46%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Other</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>567 (2%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Exposure to secondhand smoke</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_5_1 Secondary smoke exposure (hours per day) <br> [de_second_hand_smoke_hours_per_day]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>45256 (95%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>1214 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>323 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>115 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>109 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>62 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>46 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>66 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>58 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>59 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>9 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>15 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>22 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>11 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>24</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>44 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Heating and cooling systems</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_6_1 Central air conditioning <br> [de_central_air_conditioning_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>35060 (74%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>12362 (26%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>22 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_6_2 Room or window unit AC <br> [de_room_or_window_air_conditioning_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>37216 (78%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>10146 (21%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>82 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_6_3 Central heat <br> [de_central_heat_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>42521 (90%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>4812 (10%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Unknown</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>111 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Potential chemical exposures</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_7_1 Asbestos <br> [de_asbestos_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>42145 (89%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>4531 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>768 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_7_2 Radon <br> [de_radon_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>38288 (81%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>7863 (17%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>1293 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_7_3 Lead paint <br> [de_lead_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>41643 (88%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>4679 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>1122 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_7_4 Mothballs <br> [de_mothball_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>45595 (96%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>927 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>922 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_7_5 Incense or scented candles <br> [de_incense_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>25012 (53%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>22216 (47%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>216 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_7_6 Aerosol or plug-in air fresheners <br> [de_air_freshener_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>32904 (69%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>14223 (30%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Unknown</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>317 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Air filtration in the home</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_8_1 Standalone air cleaners <br> [de_air_cleaner_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>36122 (76%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>10922 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>400 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_8_2 HEPA filters in air circulation <br> [de_hepa_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>28043 (59%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>17368 (37%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Unknown</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>2033 (4%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Fireplaces and woodstoves</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_9_1 Wood burning fireplace or woodstove <br> [de_wood_fireplace_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>35613 (75%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>11512 (24%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>319 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=11,512)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_9_2 Number of times wood fires lit per week <br> [de_wood_fireplace_lightings_per_week]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>1681 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>1048 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>1167 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>898 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>476 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>586 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>229 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>1200 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>47 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>18 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10+</td>
+<td style='text-align: left;'>589 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>< 1</td>
+<td style='text-align: left;'>3573 (31%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_9_3 Gas fireplace <br> [de_gas_fireplace_present]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>33224 (70%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>13931 (29%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>289 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=13,931)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_9_4 Number of times gas fireplace lit per week <br> [de_gas_fireplace_lightings_per_week]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>1688 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>1109 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>1376 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>1290 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>830 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>1122 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>377 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>1748 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>55 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>28 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10+</td>
+<td style='text-align: left;'>929 (7%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>< 1</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>3379 (24%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Built environment: flooring and
+stairs<a id="built-environment:-flooring-and-stairs"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Types of flooring in the home</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_1 Wood <br> [de_floor_types_wood]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>16691 (35%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>30753 (65%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=30,753)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_2 Frequency dog is on wood flooring <br> [de_floor_frequency_on_wood]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Very often</td>
+<td style='text-align: left;'>26023 (85%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Occasionally</td>
+<td style='text-align: left;'>3330 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rarely</td>
+<td style='text-align: left;'>1169 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>231 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_3 Carpet <br> [de_floor_types_carpet]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>10280 (22%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>37164 (78%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=37,164)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_4 Frequency dog is on carpet <br> [de_floor_frequency_on_carpet]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Very often</td>
+<td style='text-align: left;'>29309 (79%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Occasionally</td>
+<td style='text-align: left;'>5445 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rarely</td>
+<td style='text-align: left;'>2011 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>399 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_5 Concrete <br> [de_floor_types_concrete]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>37719 (80%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>9310 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>415 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_6 Frequency dog is on concrete flooring <br> [de_floor_frequency_on_concrete]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>38134 (80%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rarely</td>
+<td style='text-align: left;'>3297 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Occasionally</td>
+<td style='text-align: left;'>3025 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Very often</td>
+<td style='text-align: left;'>2182 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>806 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_7 Tile <br> [de_floor_types_tile]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>16440 (35%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>31004 (65%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=31,004)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_8 Frequency dog is on tile flooring <br> [de_floor_frequency_on_tile]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Very often</td>
+<td style='text-align: left;'>14599 (47%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Occasionally</td>
+<td style='text-align: left;'>9052 (29%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rarely</td>
+<td style='text-align: left;'>6579 (21%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>774 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_9 Linoleum <br> [de_floor_types_linoleum]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>35027 (74%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>12417 (26%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=12,417)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_10 Frequency dog is on linoleum <br> [de_floor_frequency_on_linoleum]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Very often</td>
+<td style='text-align: left;'>5744 (46%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Occasionally</td>
+<td style='text-align: left;'>3711 (30%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rarely</td>
+<td style='text-align: left;'>2466 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>496 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_11 Laminate <br> [de_floor_types_laminate]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>31979 (67%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>15465 (33%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=15,465)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_12 Frequency dog is on laminate flooring <br> [de_floor_frequency_on_laminate]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Very often</td>
+<td style='text-align: left;'>10773 (70%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Occasionally</td>
+<td style='text-align: left;'>3059 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rarely</td>
+<td style='text-align: left;'>1388 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>245 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_13 Other floor types <br> [de_floor_types_other]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>43678 (92%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>3766 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=3,766)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_10_14 Frequency dog is on other floor types <br> [de_floor_frequency_on_other]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Very often</td>
+<td style='text-align: left;'>2679 (71%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Occasionally</td>
+<td style='text-align: left;'>771 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rarely</td>
+<td style='text-align: left;'>268 (7%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Never</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>48 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Stairs in the home</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_11_1 Presence of stairs regularly used by dog <br> [de_stairs_in_home]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>25468 (54%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=25,468)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_11_2 Number of times dog uses stairs per day <br> [de_stairs_avg_flights_per_day]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>331 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>1067 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>2725 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>1878 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>3318 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>2261 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>2773 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>389 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>1773 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>104 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>3718 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>26 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>926 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>40 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>133 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>898 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>135 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>19 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>39 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20+</td>
+<td style='text-align: left;'>1458 (6%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>< 1</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>1453 (6%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+About the dog’s use of toys<a id="about-the-dog's-use-of-toys"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Patterns of toy use</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">de_12_1 Use of toys on a regular basis <br> [de_routine_toys]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Yes</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>37027 (78%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Types of toys used by the dog</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">de_13_1 Plastic toys <br> [de_routine_toys_include_plastic]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>19327 (52%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>17350 (47%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>350 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=37,027)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_2 Stuffed fabric toys <br> [de_routine_toys_include_fabric_stuffed]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>29621 (80%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>7391 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>15 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_3 Unstuffed fabric toys <br> [de_routine_toys_include_fabric_unstuffed]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>19392 (52%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>17531 (47%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>104 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_4 Rubber toys <br> [de_routine_toys_include_rubber]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>24680 (67%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>12127 (33%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>220 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_5 Metal toys <br> [de_routine_toys_include_metal]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>36649 (99%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>242 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>136 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_6 Edible chew toys (animal origin) <br> [de_routine_toys_include_animal_products]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>21835 (59%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>15142 (41%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>50 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_7 Latex toys <br> [de_routine_toys_include_latex]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>32928 (89%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>2634 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>1465 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_8 Rope toys <br> [de_routine_toys_include_rope]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>18584 (50%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>18379 (50%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>64 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_9 Tennis balls <br> [de_routine_toys_include_tennis_balls]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>21267 (45%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>15388 (32%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>10746 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>43 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_10 Sticks <br> [de_routine_toys_include_sticks]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>19779 (42%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>16812 (35%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>10746 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>107 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_13_11 Other types of toys <br> [de_routine_toys_include_other]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>30847 (83%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>3405 (9%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Unknown</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>2775 (7%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Frequency of toy use</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=37,027)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_14_1 Toy use (hours per day) <br> [de_routine_toys_hours_per_day]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>63 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>10724 (29%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>9788 (26%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>8329 (22%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>3886 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>2184 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>836 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>575 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>79 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>298 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>19 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>117 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>50 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>25 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>18 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>24</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>10 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Sleeping patterns and
+locations<a id="sleeping-patterns-and-locations"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Sleep habits</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">de_15_1 Typical nighttime sleeping location <br> [de_nighttime_sleep_location]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'>In my room</td>
+<td style='text-align: left;'>36898 (78%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Elsewhere in the house</td>
+<td style='text-align: left;'>9714 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>449 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Outside</td>
+<td style='text-align: left;'>202 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>In a garage or barn</td>
+<td style='text-align: left;'>181 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_15_2 Hours of sleep on an average night <br> [de_nighttime_sleep_avg_hours]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>15 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>52 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>310 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>2390 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>7352 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>20892 (44%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>7382 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>6006 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>681 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>1105 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>61 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>71 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>17 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>9 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Don't know</td>
+<td style='text-align: left;'>1079 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_15_3 Alternate daytime sleeping location <br> [de_daytime_sleep_location_different]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>40776 (86%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=40,776)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_15_4 Typical daytime sleeping location <br> [de_daytime_sleep_location]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Elsewhere in the house</td>
+<td style='text-align: left;'>37198 (91%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>1360 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>In my room</td>
+<td style='text-align: left;'>1104 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Outside</td>
+<td style='text-align: left;'>969 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>In a garage or barn</td>
+<td style='text-align: left;'>145 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_15_5 Hours of sleep on an average day <br> [de_daytime_sleep_avg_hours]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>63 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>632 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>2920 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>4525 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>6560 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>4233 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>4897 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>1352 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>3657 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>911 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>2780 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>563 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>2758 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>527 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>1579 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>1057 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>1338 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>220 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>905 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>176 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>468 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>69 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>54 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Don't know</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>5192 (11%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Interactions with hazardous
+materials<a id="interactions-with-hazardous-materials"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Ingestion of hazardous, non-food items</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_16_1 Dog licks or chews items other than toys <br> [de_licks_chews_or_plays_with_non_toys]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>8075 (17%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_16_2 Ingestion of hazardous items in past year <br> [de_recent_toxins_or_hazards_ingested_frequency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>39505 (83%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1-2 times</td>
+<td style='text-align: left;'>5355 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Greater than 2 times</td>
+<td style='text-align: left;'>2584 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_16_3 Hazardous items ingested <br> [de_recent_toxins_or_hazards_ingested_]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Garbage Or Food</td>
+<td style='text-align: left;'>3718 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>3202 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Toys</td>
+<td style='text-align: left;'>2186 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Required Vet</td>
+<td style='text-align: left;'>1837 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dead Animal</td>
+<td style='text-align: left;'>1463 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Clothing</td>
+<td style='text-align: left;'>817 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chocolate</td>
+<td style='text-align: left;'>786 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Human Medication</td>
+<td style='text-align: left;'>272 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Poison</td>
+<td style='text-align: left;'>169 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pet Medication</td>
+<td style='text-align: left;'>145 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Frequency</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=7,939)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_16_4 Ingestion of hazardous item required veterinary care <br> [de_recent_toxins_or_hazards_ingested_required_vet]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Yes</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>1837 (23%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Interactions with other
+animals<a id="interactions-with-other-animals"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Animals inside or outside the home</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_17_1 Other animals present in dog's environment <br> [de_other_present_animals]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>30822 (65%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=30,822)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_17_2 Types of other animals <br> [de_other_present_animals_]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dogs</td>
+<td style='text-align: left;'>21687 (70%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cats</td>
+<td style='text-align: left;'>14951 (49%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Wildlife</td>
+<td style='text-align: left;'>10959 (36%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Birds</td>
+<td style='text-align: left;'>5904 (19%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rodents</td>
+<td style='text-align: left;'>4333 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fish</td>
+<td style='text-align: left;'>3739 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Reptiles</td>
+<td style='text-align: left;'>3125 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Livestock</td>
+<td style='text-align: left;'>1809 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Horses</td>
+<td style='text-align: left;'>1499 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>1381 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_17_3 Number of other animals indoors <br> [de_other_present_animals_indoor_count]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>2538 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>11721 (38%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>7012 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>3900 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>2146 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>1179 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>709 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>424 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>321 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>177 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>155 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>>10</td>
+<td style='text-align: left;'>540 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_17_4 Number of other animals outdoors <br> [de_other_present_animals_outdoor_count]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>25312 (82%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>1292 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>751 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>485 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>381 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>293 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>251 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>158 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>158 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>107 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>163 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>>10</td>
+<td style='text-align: left;'>1471 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_17_5 Interactions between the dog and other animals <br> [de_other_present_animals_interact_with_dog]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Yes</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>27293 (89%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+About the dog’s daily routine<a id="about-the-dog's-daily-routine"></a>
+| <a href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Daily patterns</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_18_1 Consistency of daily routine <br> [de_routine_consistency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Same routine every day</td>
+<td style='text-align: left;'>20836 (44%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Same routine on most weekends and same routine on most weekdays</td>
+<td style='text-align: left;'>13217 (28%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Same routine on weekdays only</td>
+<td style='text-align: left;'>6531 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Same routine 3-5 days a week</td>
+<td style='text-align: left;'>5570 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No daily routine/my routine varies a lot</td>
+<td style='text-align: left;'>1234 (3%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Same routine on weekends only</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>56 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Routine activities in a typical day (hours per day)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_1 Crate or cage <br> [de_routine_hours_per_day_in_crate]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>35319 (74%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>2925 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>783 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>916 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>511 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>512 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>299 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>642 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>639 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>2263 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>828 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>776 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>152 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>388 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>71 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>121 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>65 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>99 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>26 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>43 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>25 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>17 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_2 Free roaming in home <br> [de_routine_hours_per_day_roaming_house]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>546 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>291 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>214 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>392 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>346 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>680 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>554 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>911 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>399 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>1801 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>454 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>1722 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>380 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>3085 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>606 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>1746 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>1565 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>3392 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>663 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>1069 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>398 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>2094 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>1345 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>2673 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>2644 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>17474 (37%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_3 Garage or shop <br> [de_routine_hours_per_day_in_garage]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>43972 (93%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>2191 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>427 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>280 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>100 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>110 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>44 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>54 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>26 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>104 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>22 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>48 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>18 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>15 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_4 Outdoor kennel <br> [de_routine_hours_per_day_in_outdoor_kennel]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>46720 (98%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>276 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>88 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>91 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>36 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>38 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>22 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>19 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>53 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>18 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>20 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>17 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_5 Fenced yard or pen <br> [de_routine_hours_per_day_in_yard]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>14000 (30%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>7770 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>7590 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>7415 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>4232 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>2567 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>790 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>852 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>135 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>716 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>87 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>268 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>29 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>299 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>22 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>56 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>29 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>71 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>11 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>14 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>31 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>34 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>30 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>381 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_6 Free roaming outside <br> [de_routine_hours_per_day_roaming_outside]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>35875 (76%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>4838 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>2620 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>1801 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>896 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>506 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>167 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>197 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>25 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>162 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>18 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>74 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>73 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>24 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>9 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>23 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>9 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>90 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_7 On a chain or lead <br> [de_routine_hours_per_day_chained_outside]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>35888 (76%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>4391 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>3898 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>2208 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>733 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>186 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>46 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>28 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>23 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_8 In a location away from home <br> [de_routine_hours_per_day_away_from_home]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>33851 (71%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>4230 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>3423 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>2469 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>900 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>555 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>257 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>316 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>146 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>736 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>188 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>207 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>30 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>79 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_9 Interacting with other animals <br> [de_routine_hours_per_day_with_other_animals]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>8325 (18%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>11930 (25%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>4168 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>2736 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>1255 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>1326 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>660 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>963 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>234 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>1487 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>182 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>1082 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>81 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>1621 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>136 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>487 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>444 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>1290 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>200 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>308 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>24 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>359 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>29 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>171 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>151 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>7795 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_10 Interacting with adults <br> [de_routine_hours_per_day_with_adults]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>363 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>948 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>894 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>1928 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>2065 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>3127 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>2153 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>3273 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>849 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>4787 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>514 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>3501 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>245 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>5179 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>401 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>1769 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>1460 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>4023 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>493 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>1119 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>93 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>1043 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>93 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>417 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>236 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>6471 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_11 Interacting with teenagers (13-17) <br> [de_routine_hours_per_day_with_teens]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>40384 (85%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>2932 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>660 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>649 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>331 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>406 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>234 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>300 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>80 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>375 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>33 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>211 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>258 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>19 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>68 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>58 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>130 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>39 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>26 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>209 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_19_12 Interacting with children (<13) <br> [de_routine_hours_per_day_with_children]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>37101 (78%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><1</td>
+<td style='text-align: left;'>4747 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>938 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>755 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>492 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>540 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>330 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>460 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>94 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>508 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>48 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>282 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>9 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>417 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>35 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>99 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>68 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>153 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>47 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>30 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>24</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>265 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+About the dog’s yard<a id="about-the-dog's-yard"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+General characteristics</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_20_1 Size of the yard at home <br> [de_property_area]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>I do not have a yard or my dog does not use a yard</td>
+<td style='text-align: left;'>4705 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Less than 500 square feet</td>
+<td style='text-align: left;'>3732 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>500 to 1000 square feet</td>
+<td style='text-align: left;'>9196 (19%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1000 to 5000 square feet</td>
+<td style='text-align: left;'>11130 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Between 5000 square feet and 1 acre</td>
+<td style='text-align: left;'>9465 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1 - 3 acres</td>
+<td style='text-align: left;'>4767 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>More than 3 acres</td>
+<td style='text-align: left;'>4449 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=42,739)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_20_2 Regular access to the yard by the dog <br> [de_property_accessible]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>39284 (92%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=39,284)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_20_3 Area of yard accessible to the dog <br> [de_property_area_accessible]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Less than 500 square feet</td>
+<td style='text-align: left;'>4285 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>500 to 1000 square feet</td>
+<td style='text-align: left;'>10967 (28%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1000 to 5000 square feet</td>
+<td style='text-align: left;'>11612 (30%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Between 5000 square feet and 1 acre</td>
+<td style='text-align: left;'>6875 (18%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1 - 3 acres</td>
+<td style='text-align: left;'>3410 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>More than 3 acres</td>
+<td style='text-align: left;'>2135 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_20_4 Presence of fence or other containment <br> [de_property_containment_type]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>"" Yes, dog is contained by a fence or barrier</td>
+<td style='text-align: left;'>29254 (74%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No, dog is not contained""</td>
+<td style='text-align: left;'>4776 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes, dog is contained by a lead or chain</td>
+<td style='text-align: left;'>2498 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes, dog is contained by an invisible fence</td>
+<td style='text-align: left;'>1726 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes, dog is contained in another way</td>
+<td style='text-align: left;'>856 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes, dog is contained by an electric fence</td>
+<td style='text-align: left;'>147 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes, dog is contained in a kennel</td>
+<td style='text-align: left;'>27 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_20_5 Sources of drinking water in the yard <br> [de_property_drinking_water_]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'> Bowl</td>
+<td style='text-align: left;'>28183 (72%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'> None</td>
+<td style='text-align: left;'>8587 (22%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'> Puddles</td>
+<td style='text-align: left;'>4392 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'> Other</td>
+<td style='text-align: left;'>3616 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'> Hose</td>
+<td style='text-align: left;'>3109 (8%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'> Unknown</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>147 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Pesticide and herbicide application</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=39,284)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_21_1 Yard treated to control weeds <br> [de_property_weed_control_frequency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>27779 (71%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>10761 (27%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>744 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=11,505)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_21_2 Frequency of herbicide applicaton <br> [de_property_weed_control_frequency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>"" Regularly applied, year round</td>
+<td style='text-align: left;'>1313 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Regularly applied, seasonally (part of the year)</td>
+<td style='text-align: left;'>4986 (43%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Irregularly applied, year round</td>
+<td style='text-align: left;'>322 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Irregularly applied, seasonally (part of the year)</td>
+<td style='text-align: left;'>2412 (21%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Infrequently</td>
+<td style='text-align: left;'>1728 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown""</td>
+<td style='text-align: left;'>744 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_21_3 Home treated to control insects and pests <br> [de_property_pest_control_frequency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>29733 (63%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>"" Regularly applied, year round</td>
+<td style='text-align: left;'>5548 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Regularly applied, seasonally (part of the year)</td>
+<td style='text-align: left;'>4988 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Irregularly applied, year round</td>
+<td style='text-align: left;'>881 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Irregularly applied, seasonally (part of the year)</td>
+<td style='text-align: left;'>2276 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Infrequently</td>
+<td style='text-align: left;'>2589 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown""</td>
+<td style='text-align: left;'>1429 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=13,923)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_21_4 Frequence of pesticide application <br> [de_property_pest_control_frequency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>"" Regularly applied, year round</td>
+<td style='text-align: left;'>4545 (33%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Regularly applied, seasonally (part of the year)</td>
+<td style='text-align: left;'>4139 (30%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Irregularly applied, year round</td>
+<td style='text-align: left;'>676 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Irregularly applied, seasonally (part of the year)</td>
+<td style='text-align: left;'>1928 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Infrequently</td>
+<td style='text-align: left;'>2142 (15%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Unknown""</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>493 (4%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Ingestion of non-hazardous, non-food items</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_22_1 Ingestion of grass <br> [de_eats_grass_frequency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>7270 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Frequently</td>
+<td style='text-align: left;'>13508 (28%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Infrequently</td>
+<td style='text-align: left;'>26666 (56%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_22_2 Ingestion of feces <br> [de_eats_feces]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>34671 (73%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>10681 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>2092 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=10,681)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_22_3 Type of feces <br> [de_eats_feces_]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Wildlife</td>
+<td style='text-align: left;'>4455 (42%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Own Feces</td>
+<td style='text-align: left;'>3682 (34%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other Dog</td>
+<td style='text-align: left;'>3533 (33%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cat</td>
+<td style='text-align: left;'>3347 (31%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>918 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Horse</td>
+<td style='text-align: left;'>862 (8%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Cattle</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>245 (2%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Alterate outdoor water sources</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_23_1 Drinking from outdoor water sources <br> [de_drinks_outdoor_water]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>17511 (37%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=17,511)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_23_2 Frequency of use of outdoor water sources <br> [de_drinks_outdoor_water_frequency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Daily</td>
+<td style='text-align: left;'>1814 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Weekly</td>
+<td style='text-align: left;'>4872 (28%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Monthly</td>
+<td style='text-align: left;'>2927 (17%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Rarely</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>7898 (45%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Neighborhood characteristics<a id="neighborhood-characteristics"></a> |
+<a href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Features of the environment around the home</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_24_1 Traffic noise heard from inside home <br> [de_traffic_noise_in_home_frequency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>6487 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Seldom</td>
+<td style='text-align: left;'>18364 (39%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Sometimes</td>
+<td style='text-align: left;'>14531 (31%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Usually</td>
+<td style='text-align: left;'>5718 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Always</td>
+<td style='text-align: left;'>2331 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_24_2 Traffic noise heard from yard <br> [de_traffic_noise_in_property_frequency]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>1663 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Seldom</td>
+<td style='text-align: left;'>11203 (29%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Sometimes</td>
+<td style='text-align: left;'>14287 (36%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Usually</td>
+<td style='text-align: left;'>7996 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Always</td>
+<td style='text-align: left;'>4124 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>11 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_24_3 Sidewalks in dog's neighborhood <br> [de_neighborhood_has_sidewalks]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>""Yes, on all the streets</td>
+<td style='text-align: left;'>20203 (43%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No""</td>
+<td style='text-align: left;'>17035 (36%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes, on some streets</td>
+<td style='text-align: left;'>10206 (22%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_24_4 Parks within half a mile of home <br> [de_neighborhood_has_parks]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Yes</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>39482 (83%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Neighborhood social
+environment<a id="neighborhood-social-environment"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Interactions near the home</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_25_1 Dog interactions with animals <br> [de_interacts_with_neighborhood_animals]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>26321 (55%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=26,321)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_25_2 Owner present during animal interactions <br> [de_interacts_with_neighborhood_animals_with_owner]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>23890 (91%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_25_3 Dog interactions with humans <br> [de_interacts_with_neighborhood_humans]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>34299 (72%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=34,299)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_25_4 Owner present during human interactions <br> [de_interacts_with_neighborhood_humans_with_owner]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Yes</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>31260 (91%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Extralocal environmental
+exposure<a id="extralocal-environmental-exposure"></a> | <a
+href="#top">Back to Table of Contents</a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dog parks</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_26_1 Taking dog to dog park <br> [de_dogpark]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>18984 (40%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=18,984)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_26_2 Days per month at dog park <br> [de_dogpark_days_per_month]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>2518 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>2394 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>1164 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>1861 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>847 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>447 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>211 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>550 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>47 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>622 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>263 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>18 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>68 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>384 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>63 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>16 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>40 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>510 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>38 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>37 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>22 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>45 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>25</td>
+<td style='text-align: left;'>279 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>26</td>
+<td style='text-align: left;'>41 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>27</td>
+<td style='text-align: left;'>27 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>28</td>
+<td style='text-align: left;'>97 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>29</td>
+<td style='text-align: left;'>31 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>30</td>
+<td style='text-align: left;'>301 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>31</td>
+<td style='text-align: left;'>384 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>< 1</td>
+<td style='text-align: left;'>5645 (30%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_26_3 Transportation to dog park <br> [de_dogpark_travel_]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Drive</td>
+<td style='text-align: left;'>16762 (88%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Walk</td>
+<td style='text-align: left;'>5075 (27%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bike</td>
+<td style='text-align: left;'>152 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Public Transportation</td>
+<td style='text-align: left;'>94 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>67 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Time Hours</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Time Minutes</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_26_4 Travel time to dog park (hours) <br> [de_dogpark_travel_time_hours]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>18192 (96%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>627 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>58 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>21 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>15 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>20 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>12+</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>30 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Open spaces</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_27_1 Taking dog to open recreational spaces <br> [de_recreational_spaces]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>32356 (68%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=32,356)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_27_2 Days per month at open spaces <br> [de_recreational_spaces_days_per_month]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>3562 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>4259 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>2149 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>3664 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>1863 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>990 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>466 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>1182 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>82 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>1544 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>21 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>547 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>24 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>139 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>1017 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>122 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>32 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>72 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>11 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>1385 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>87 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>81 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>37 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>141 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>25</td>
+<td style='text-align: left;'>849 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>26</td>
+<td style='text-align: left;'>102 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>27</td>
+<td style='text-align: left;'>91 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>28</td>
+<td style='text-align: left;'>313 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>29</td>
+<td style='text-align: left;'>78 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>30</td>
+<td style='text-align: left;'>1299 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>31</td>
+<td style='text-align: left;'>1181 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>< 1</td>
+<td style='text-align: left;'>4966 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_27_3 Transportation to open spaces <br> [de_recreational_spaces_travel_]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Drive</td>
+<td style='text-align: left;'>25595 (79%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Walk</td>
+<td style='text-align: left;'>13937 (43%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bike</td>
+<td style='text-align: left;'>371 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>124 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Public Transportation</td>
+<td style='text-align: left;'>123 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Time Hours</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Time Minutes</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_27_4 Travel time to open spaces (hours) <br> [de_recreational_spaces_travel_time_hours]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>29580 (91%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>2102 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>407 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>103 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>46 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>27 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>14 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>28 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>12+</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>36 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Work</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_28_1 Taking dog to work <br> [de_work]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>8418 (18%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=8,418)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_28_2 Days per month at work <br> [de_work_days_per_month]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>840 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>762 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>345 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>638 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>451 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>141 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>63 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>221 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>28 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>278 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>189 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>19 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>37 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>223 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>144 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>48 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>11 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>831 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>36 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>109 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>33 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>71 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>25</td>
+<td style='text-align: left;'>136 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>26</td>
+<td style='text-align: left;'>15 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>27</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>28</td>
+<td style='text-align: left;'>52 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>29</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>30</td>
+<td style='text-align: left;'>196 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>31</td>
+<td style='text-align: left;'>487 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>< 1</td>
+<td style='text-align: left;'>1981 (24%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_28_3 Transportation to work <br> [de_work_travel_]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Drive</td>
+<td style='text-align: left;'>6835 (81%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>926 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Walk</td>
+<td style='text-align: left;'>902 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Public Transportation</td>
+<td style='text-align: left;'>139 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bike</td>
+<td style='text-align: left;'>58 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Time Hours</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Time Minutes</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_28_4 Travel time to work (hours) <br> [de_work_travel_time_hours]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>7708 (92%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>605 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>57 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>12+</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>8 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dog sitter or daycare</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">de_29_1 Taking dog to pet care <br> [de_sitter_or_daycare]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>11671 (25%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=11,671)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_29_2 Days per month at pet care <br> [de_sitter_or_daycare_days_per_month]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>1294 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>1370 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>604 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>1423 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>406 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>171 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>62 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>623 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>42 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>209 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>12</td>
+<td style='text-align: left;'>230 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>13</td>
+<td style='text-align: left;'>11 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>14</td>
+<td style='text-align: left;'>17 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>15</td>
+<td style='text-align: left;'>97 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>16</td>
+<td style='text-align: left;'>49 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>17</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>18</td>
+<td style='text-align: left;'>16 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>19</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>20</td>
+<td style='text-align: left;'>206 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>21</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>22</td>
+<td style='text-align: left;'>17 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>23</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>24</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>25</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>26</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>27</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>28</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>29</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>30</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>31</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>< 1</td>
+<td style='text-align: left;'>4771 (41%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_29_3 Transportation to pet care <br> [de_sitter_or_daycare_travel_]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Drive</td>
+<td style='text-align: left;'>10982 (94%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Walk</td>
+<td style='text-align: left;'>791 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>195 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Public Transportation</td>
+<td style='text-align: left;'>39 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bike</td>
+<td style='text-align: left;'>23 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Time Hours</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Time Minutes</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">de_29_4 Travel time to pet care (hours) <br> [de_sitter_or_daycare_travel_time_hours]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>0</td>
+<td style='text-align: left;'>11077 (95%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1</td>
+<td style='text-align: left;'>430 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2</td>
+<td style='text-align: left;'>51 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3</td>
+<td style='text-align: left;'>24 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6</td>
+<td style='text-align: left;'>9 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8</td>
+<td style='text-align: left;'>24 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>12+</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>17 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<!-- 
+```{r table1, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[1]]$tag, '
+
+')); tblStyled <- params$inputDF[[1]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[1]], tfoot = params$footnotes[[1]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table2, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[2]]$tag, '
+
+')); tblStyled <- params$inputDF[[2]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[2]], tfoot = params$footnotes[[2]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table3, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[3]]$tag, '
+
+')); tblStyled <- params$inputDF[[3]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[3]], tfoot = params$footnotes[[3]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table4, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[4]]$tag, '
+
+')); tblStyled <- params$inputDF[[4]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[4]], tfoot = params$footnotes[[4]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table5, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[5]]$tag, '
+
+')); tblStyled <- params$inputDF[[5]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[5]], tfoot = params$footnotes[[5]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table6, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[6]]$tag, '
+
+')); tblStyled <- params$inputDF[[6]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[6]], tfoot = params$footnotes[[6]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table7, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[7]]$tag, '
+
+')); tblStyled <- params$inputDF[[7]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[7]], tfoot = params$footnotes[[7]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table8, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[8]]$tag, '
+
+')); tblStyled <- params$inputDF[[8]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[8]], tfoot = params$footnotes[[8]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table9, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[9]]$tag, '
+
+')); tblStyled <- params$inputDF[[9]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[9]], tfoot = params$footnotes[[9]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table10, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[10]]$tag, '
+
+')); tblStyled <- params$inputDF[[10]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[10]], tfoot = params$footnotes[[10]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table11, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[11]]$tag, '
+
+')); tblStyled <- params$inputDF[[11]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[11]], tfoot = params$footnotes[[11]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table12, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[12]]$tag, '
+
+')); tblStyled <- params$inputDF[[12]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[12]], tfoot = params$footnotes[[12]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table13, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[13]]$tag, '
+
+')); tblStyled <- params$inputDF[[13]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[13]], tfoot = params$footnotes[[13]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table14, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[14]]$tag, '
+
+')); tblStyled <- params$inputDF[[14]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[14]], tfoot = params$footnotes[[14]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table15, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[15]]$tag, '
+
+')); tblStyled <- params$inputDF[[15]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[15]], tfoot = params$footnotes[[15]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table16, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[16]]$tag, '
+
+')); tblStyled <- params$inputDF[[16]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[16]], tfoot = params$footnotes[[16]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table17, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[17]]$tag, '
+
+')); tblStyled <- params$inputDF[[17]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[17]], tfoot = params$footnotes[[17]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table18, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[18]]$tag, '
+
+')); tblStyled <- params$inputDF[[18]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[18]], tfoot = params$footnotes[[18]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table19, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[19]]$tag, '
+
+')); tblStyled <- params$inputDF[[19]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[19]], tfoot = params$footnotes[[19]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table20, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[20]]$tag, '
+
+')); tblStyled <- params$inputDF[[20]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[20]], tfoot = params$footnotes[[20]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table21, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[21]]$tag, '
+
+')); tblStyled <- params$inputDF[[21]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[21]], tfoot = params$footnotes[[21]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table22, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[22]]$tag, '
+
+')); tblStyled <- params$inputDF[[22]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[22]], tfoot = params$footnotes[[22]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table23, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[23]]$tag, '
+
+')); tblStyled <- params$inputDF[[23]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[23]], tfoot = params$footnotes[[23]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table24, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[24]]$tag, '
+
+')); tblStyled <- params$inputDF[[24]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[24]], tfoot = params$footnotes[[24]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table25, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[25]]$tag, '
+
+')); tblStyled <- params$inputDF[[25]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[25]], tfoot = params$footnotes[[25]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table26, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[26]]$tag, '
+
+')); tblStyled <- params$inputDF[[26]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[26]], tfoot = params$footnotes[[26]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table27, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[27]]$tag, '
+
+')); tblStyled <- params$inputDF[[27]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[27]], tfoot = params$footnotes[[27]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table28, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[28]]$tag, '
+
+')); tblStyled <- params$inputDF[[28]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[28]], tfoot = params$footnotes[[28]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+```, 
+```{r table29, results='asis', echo=FALSE}
+
+ cat(paste0(params$sectionHeaders[[29]]$tag, '
+
+')); tblStyled <- params$inputDF[[29]] |> htmlTable::addHtmlTableStyle(align = 'left', align.header = 'left'); tblHtml <- htmlTable::htmlTable(x = tblStyled[2:nrow(tblStyled),], header = tblStyled[1,], rnames = FALSE, caption = params$captions[[29]], tfoot = params$footnotes[[29]], css = NULL); htmltools::div(class = 'table-container', htmltools::HTML(tblHtml))
+
+``` -->
+	</div>
+</body>
+</html>

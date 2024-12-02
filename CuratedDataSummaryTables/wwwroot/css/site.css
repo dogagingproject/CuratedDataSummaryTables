@@ -1,0 +1,138 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: Roboto, 'Source Sans Pro', sans-serif, Arial;
+    line-height: 1.42857143;
+}
+
+.div-spacer {
+  height: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-sub-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 11px;
+}
+
+.home-title {
+    margin-top: 15px;
+}
+
+.home-body {
+    width: 90%;
+}
+
+.home-dap-logo {
+    width: 20%;
+    margin: 10px;
+}
+
+.uw-logo {
+    background-color: #4b2d83;
+    width: 33%;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.tamu-logo {
+    background-color: #500001;
+    width: 15%;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.home-header {
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+.nav-dap-logo {
+    width: 40%;
+    display: flex;
+    margin: auto;
+    padding: 5px;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+/* Year select box on nav panel */
+#yearDropdown {
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Light gray border */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    background-color: #f9f9f9;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    outline: none;
+}
+    
+#yearDropdown:hover,
+#yearDropdown:focus {
+    background-color: #fff; /* Slightly lighter background on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    border-color: #007bff; /* Blue border on focus */
+}
+
+/* Scroll to top button */
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #55348E;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.3); 
+}
+
+.top-button:hover {
+    background-color: #42276B; /* Slightly darker purple on hover */
+}
+
+
+
+
+
+/* TODO: where did below come from? in use? can delete?? */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu.show {
+    display: block;
+}

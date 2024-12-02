@@ -1,0 +1,12 @@
+﻿@page
+@{
+    ViewData["Title"] = "HLES Owner Contact";
+}
+
+@{
+    // Get selected year from the query string and build the file path
+    var year = HttpContext.Request.Query["year"].ToString() ?? Helpers.Constants.defaultDataYear;
+    var filePath = $"/DataViews/{year}/HlesOwnerContact.html";
+}
+
+<html-embed file-path="@filePath"></html-embed>

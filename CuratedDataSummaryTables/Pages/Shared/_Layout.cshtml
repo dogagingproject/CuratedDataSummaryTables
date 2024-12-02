@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CuratedDataSummaryTables</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CuratedDataSummaryTables.styles.css" asp-append-version="true" />
+    <link rel="icon" type="image/x-icon" href="~/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="~/js/scroll-top-button.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item">
+                            <img src="~/images/logo_dap_blktexttranparentbg.png" class="nav-dap-logo" alt="DAP logo" />
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Index">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            @{
+                                var defaultYear = Context.Request.Query["year"].ToString() ?? Helpers.Constants.defaultDataYear;
+                                var years = new List<int> { 2023, 2022, 2021};
+                                // Generate the options list as HTML strings
+                                var optionsHtml = new System.Text.StringBuilder();
+                                foreach (var year in years)
+                                {
+                                    if (year.ToString() == defaultYear)
+                                    {
+                                        optionsHtml.AppendLine($"<option value=\"{year}\" selected>{year}</option>");
+                                    }
+                                    else
+                                    {
+                                        optionsHtml.AppendLine($"<option value=\"{year}\">{year}</option>");
+                                    }
+                                }
+                            }
+                            <label for="yearDropdown">Data Year</label>
+                            <select id="yearDropdown" name="year" onchange="updateLinksAndReload()">
+                                @Html.Raw(optionsHtml.ToString())
+                            </select>
+                        </li>
+
+                        @* TEST - DELETE LATER *@
+@*                         <li class="nav-item">
+                            <a class="nav-link" href="~/OwnerDemographics.html">
+                                Owner Demographics (test direct)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/OwnerDemographics_iframe">
+                                Owner Demographics (test iframe)
+                            </a>
+                        </li>
+ *@
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesBehavior" href="/HlesBehavior?year=@defaultYear">
+                                <i class="bi bi-award-fill"></i> Behavior
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesDiet" href="/HlesDiet?year=@defaultYear">
+                                <i class="bi bi-cup-fill"></i> Diet
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesDogDemographics" href="/HlesDogDemographics?year=@defaultYear">
+                                <i class="bi bi-star-fill"></i> Dog Demographics
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesEnvironment" href="/HlesEnvironment?year=@defaultYear">
+                                <i class="bi bi-geo-alt-fill"></i> Environment
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesHealthStatus" href="/HlesHealthStatus?year=@defaultYear">
+                                <i class="bi bi-bandaid-fill"></i> Health Status
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesMedsPreventives" href="/HlesMedsPreventives?year=@defaultYear">
+                                <i class="bi bi-capsule"></i> Meds and Preventives
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesOwnerContact" href="/HlesOwnerContact?year=@defaultYear">
+                                <i class="bi bi-person-vcard-fill"></i> Owner Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesOwnerDemographics" href="/HlesOwnerDemographics?year=@defaultYear">
+                                <i class="bi bi-person-fill"></i> Owner Demographics
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesPhysicalActivity" href="/HlesPhysicalActivity?year=@defaultYear">
+                                <i class="bi bi-heart-pulse-fill"></i> Physical Activity
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                @RenderBody()
+
+                <!-- Floating Top Button -->
+                <button id="topButton" class="top-button" onclick="scrollToTop()"><i class="bi bi-arrow-up-circle"></i> Top</button>
+            </main>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - CuratedDataSummaryTables - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    @* <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script> *@
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    @* <script src="~/js/site.js" asp-append-version="true"></script> *@
+    <script>
+        function updateLinksAndReload() {
+            var selectedYear = document.getElementById("yearDropdown").value;
+            
+            // Update all links with the data-base-url attribute
+            document.querySelectorAll("a[data-base-url]").forEach(link => {
+                var baseUrl = link.getAttribute("data-base-url");
+                link.href = `${baseUrl}?year=${selectedYear}`;
+            });
+            
+            // Reload ony if ?year= is already in the query string (i.e. a data page is already loaded)
+            var currentYear = new URLSearchParams(window.location.search).get("year");
+            if (window.location.search.includes("?year=") && currentYear !== selectedYear ) {
+                window.location.href = `?year=${selectedYear}`;
+            }
+        }
+
+        // On page load, set links based on the initial year selection
+        document.addEventListener("DOMContentLoaded", updateLinksAndReload);
+
+    </script>
+
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

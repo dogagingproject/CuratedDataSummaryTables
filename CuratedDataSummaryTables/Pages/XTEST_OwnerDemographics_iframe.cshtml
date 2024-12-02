@@ -1,0 +1,14 @@
+﻿@* partial will not work b/c the partial view needs to be cshtml file *@
+@* @page
+@model OwnerDemographicsModel
+<partial name="_OwnerDemographics" /> *@
+
+
+@page
+@model OwnerDemographicsIFrameModel
+@{
+    ViewData["Title"] = "Owner Demographics";
+}
+<div height="100%">
+    <iframe src="/OwnerDemographics.html" width="100%" height="900px" style="border:none;"></iframe>
+</div>
