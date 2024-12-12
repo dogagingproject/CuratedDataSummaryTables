@@ -8,24 +8,32 @@
 <body>
 	<div class="body-container">
 		<h1>
-About the Diet Instrument
+About the Diet Survey
 </h1>
-<p>The Diet Instrument collects data on food types, treat types,
-supplements, changes to diet, and canine eating behaviors. These
-variables provide baseline information. Other validated survey
-instruments supplement and extend the Diet Instrument.<br><br>Survey
-Instrument: <a
-href="https://github.com/dogagingproject/dataRelease/blob/master/Survey_Instruments/HLES/DAP_HLES_06_Diet.pdf">HLES
-Diet</a></p>
+<p>The Diet Survey collects data on diet types, changes to diet, treat,
+supplements, appetite and weight. This survey was in use until July 2022
+when it was replaced with the Comprehensive Diet
+Survey.<br><br><a href="https://github.com/dogagingproject/dataRelease/blob/master/Survey_Instruments/HLES/DAP_HLES_06_Diet.pdf" target="_blank">Survey
+Instrument: HLES Diet</a></p>
 <div id="toc" class="section level2">
 <h2>
 Table of Contents
 </h2>
+<p><a href="#feeding-patterns">Feeding patterns</a><br />
+<a href="#primary-diet">Primary diet</a><br />
+<a href="#secondary-diet,-if-applicable">Secondary diet, if
+applicable</a><br />
+<a href="#treats-and-supplements">Treats and supplements</a><br />
+<a href="#diet-consistency,-appetite,-and-weight">Diet consistency,
+appetite, and weight</a></p>
 </div>
+<h3 class="table-title">
+Feeding patterns<a id="feeding-patterns"></a>
+</h3>
 <div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='2' style='text-align: left;'>
-All Dogs</td></tr>
+Table df_1: Feeding frequency</td></tr>
 <tr>
 <th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
 <th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=47,444)</b></th>
@@ -33,7 +41,7 @@ All Dogs</td></tr>
 </thead>
 <tbody>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_1_1 Times per day being fed <br> [df_feedings_per_day]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_1_1 Times per day the dog is fed <br> [df_feedings_per_day]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -53,298 +61,105 @@ All Dogs</td></tr>
 <td style='text-align: left;'>4145 (9%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (15%)</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'></td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>7115 (15%)</td>
 </tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+*Free feeding is the practice of filling up bowl when empty or always having food available.</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Primary diet<a id="primary-diet"></a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Table df_2: About the dog's primary diet component</td></tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_1_2 Primary component of diet <br> [df_primary_diet_component]</span></td>
-<td style='text-align: left;'></td>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">df_2_1 Primary diet component <br> [df_primary_diet_component]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td style='text-align: left;'>Commercially prepared dry food (kibble)</td>
 <td style='text-align: left;'>33129 (70%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (15%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Home prepared cooked diet</td>
-<td style='text-align: left;'>1672 (4%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Commercially prepared canned food</td>
 <td style='text-align: left;'>1599 (3%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'>Commercially prepared refrigerated or frozen raw food</td>
-<td style='text-align: left;'>1532 (3%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Other</td>
-<td style='text-align: left;'>747 (2%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Home prepared raw diet</td>
-<td style='text-align: left;'>630 (1%)</td>
-</tr>
-<tr>
 <td style='text-align: left;'>Commercially prepared freeze-dried food</td>
 <td style='text-align: left;'>591 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Commercially prepared refrigerated or frozen raw food</td>
+<td style='text-align: left;'>1532 (3%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Commercially prepared semi-dry or semi-moist food</td>
 <td style='text-align: left;'>429 (1%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_1_3 Organic primary component <br> [df_primary_diet_component_organic]</span></td>
+<td style='text-align: left;'>Home prepared cooked diet</td>
+<td style='text-align: left;'>1672 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Home prepared raw diet</td>
+<td style='text-align: left;'>630 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>747 (2%)</td>
+</tr>
+<tr>
 <td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_2_2 Organic primary diet component <br> [df_primary_diet_component_organic]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>32285 (68%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Yes</td>
 <td style='text-align: left;'>8044 (17%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_1_4 Grain-free primary component <br> [df_primary_diet_component_grain_free]</span></td>
 <td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_2_3 Grain-free primary diet component (current) <br> [df_primary_diet_component_grain_free]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>24085 (51%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Yes</td>
 <td style='text-align: left;'>16244 (34%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_1_5 Changes to primary component <br> [df_primary_diet_component_change_recent]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Yes</td>
-<td style='text-align: left;'>10781 (23%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_6 25% or more of secondary component <br> [df_secondary_diet_component_used]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Yes</td>
-<td style='text-align: left;'>14044 (30%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_7 Times per day giving treats <br> [df_treats_frequency]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Three times or more per day</td>
-<td style='text-align: left;'>16706 (35%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Twice per day</td>
-<td style='text-align: left;'>11136 (23%)</td>
-</tr>
-<tr>
 <td style='text-align: left;'></td>
 <td style='text-align: left;'>7115 (15%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'>Occasionally (not daily)</td>
-<td style='text-align: left;'>6297 (13%)</td>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=24,085)</b></td>
 </tr>
 <tr>
-<td style='text-align: left;'>Once per day</td>
-<td style='text-align: left;'>5853 (12%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Never</td>
-<td style='text-align: left;'>337 (1%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_8 Daily supplements <br> [df_daily_supplements]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Yes</td>
-<td style='text-align: left;'>18547 (39%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_9 Less frequent supplements <br> [df_infrequent_supplements]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Yes</td>
-<td style='text-align: left;'>4584 (10%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_10 Consistency of daily diet <br> [df_diet_consistency]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Very consistent</td>
-<td style='text-align: left;'>35837 (76%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (15%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Somewhat consistent</td>
-<td style='text-align: left;'>4182 (9%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Not at all consistent</td>
-<td style='text-align: left;'>275 (1%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Other</td>
-<td style='text-align: left;'>35 (&lt;1%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_11 Appetite <br> [df_appetite]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Average (eats without prompting to do so and seems full afterwards)</td>
-<td style='text-align: left;'>22784 (48%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Voracious (always ready for more food)</td>
-<td style='text-align: left;'>15729 (33%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (15%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Poor (does not eat without encouragement)</td>
-<td style='text-align: left;'>1816 (4%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_12 Change in appetite <br> [df_appetite_change_last_year]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Yes</td>
-<td style='text-align: left;'>37355 (79%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (15%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Eats less than usual</td>
-<td style='text-align: left;'>1807 (4%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Eats more than usual</td>
-<td style='text-align: left;'>794 (2%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Don't Know</td>
-<td style='text-align: left;'>373 (1%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_13 Experience of being malnourished <br> [df_ever_malnourished]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_2_4 Grain-free primary diet component (in the past) <br> [df_primary_diet_component_grain_free_past]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
 <td style='text-align: left;'>No</td>
-<td style='text-align: left;'>31713 (67%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (15%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Unknown</td>
-<td style='text-align: left;'>5536 (12%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Yes</td>
-<td style='text-align: left;'>3080 (6%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_14 Experience of being underweight <br> [df_ever_underweight]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>31174 (66%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (15%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Yes</td>
-<td style='text-align: left;'>5386 (11%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Unknown</td>
-<td style='text-align: left;'>3769 (8%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_15 Experience of being overweight <br> [df_ever_overweight]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>28400 (60%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Yes</td>
-<td style='text-align: left;'>10076 (21%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (15%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Unknown</td>
-<td style='text-align: left;'>1853 (4%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_1_16 Change in weight <br> [df_weight_change_last_year]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Yes</td>
-<td style='text-align: left;'>30583 (64%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (15%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>My dog is a puppy who was growing to his/her full size during the past year</td>
-<td style='text-align: left;'>5405 (11%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Lost weight</td>
-<td style='text-align: left;'>2175 (5%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Gained weight</td>
-<td style='text-align: left;'>1946 (4%)</td>
-</tr>
-<tr>
-<td style='border-bottom: 2px solid grey; text-align: left;'>Don't know</td>
-<td style='border-bottom: 2px solid grey; text-align: left;'>220 (&lt;1%)</td>
-</tr>
-</tbody>
-<tfoot><tr><td colspan='2'>
-*Free feeding is the practice of filling up bowl when empty or always having food available.</td></tr></tfoot>
-</table></div>
-<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
-<thead>
-<tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs whose primary component is not grain-free</td></tr>
-<tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=24,085)</b></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_2_1 Experience of grain-free primary <br> [df_primary_diet_component_grain_free_past]</span></td>
-<td style='text-align: left;'></td>
+<td style='text-align: left;'>16878 (70%)</td>
 </tr>
 <tr>
 <td style='border-bottom: 2px solid grey; text-align: left;'>Yes</td>
@@ -357,15 +172,31 @@ Subset of Dogs whose primary component is not grain-free</td></tr>
 <div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs whose primary comment has been changed in the past 12 months</td></tr>
+Table df_3: Changes to the primary diet</td></tr>
 <tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=10,781)</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">df_3_1 Changes to primary diet component in last 12 months <br> [df_primary_diet_component_change_recent]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_3_1 Time when the dog changed diet <br> [df_primary_diet_component_change_months_ago]</span></td>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>29548 (62%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>10781 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=10,781)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_3_2 Months since primary diet change <br> [df_primary_diet_component_change_months_ago]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -417,7 +248,7 @@ Subset of Dogs whose primary comment has been changed in the past 12 months</td>
 <td style='text-align: left;'>767 (7%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_3_2 Reason for diet change (Multiple choice) <br> [df_primary_diet_component_change_]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_3_3 Reason for primary diet change <br> [df_primary_diet_component_change_]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -452,35 +283,46 @@ Subset of Dogs whose primary comment has been changed in the past 12 months</td>
 <tfoot><tr><td colspan='2'>
 </td></tr></tfoot>
 </table></div>
+<h3 class="table-title">
+Secondary diet, if applicable<a id="secondary-diet,-if-applicable"></a>
+</h3>
 <div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs who have secondary component of diet</td></tr>
+Table df_4: About the dog's secondary diet component</td></tr>
 <tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=14,044)</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">df_4_1 Presence of a secondary diet component <br> [df_secondary_diet_component_used]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_4_1 Secondary component of diet <br> [df_secondary_diet_component]</span></td>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>26285 (55%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>14044 (30%)</td>
+</tr>
+<tr>
 <td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'>Commercially prepared canned food</td>
-<td style='text-align: left;'>4463 (32%)</td>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=14,044)</b></td>
 </tr>
 <tr>
-<td style='text-align: left;'>Home prepared cooked diet</td>
-<td style='text-align: left;'>2958 (21%)</td>
+<td style='text-align: left;'><span class="row-heading">df_4_2 Secondary diet component <br> [df_secondary_diet_component]</span></td>
+<td style='text-align: left;'></td>
 </tr>
 <tr>
 <td style='text-align: left;'>Commercially prepared dry food (kibble)</td>
 <td style='text-align: left;'>2443 (17%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'>Other</td>
-<td style='text-align: left;'>1772 (13%)</td>
+<td style='text-align: left;'>Commercially prepared canned food</td>
+<td style='text-align: left;'>4463 (32%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Commercially prepared freeze-dried food</td>
@@ -491,54 +333,56 @@ Subset of Dogs who have secondary component of diet</td></tr>
 <td style='text-align: left;'>688 (5%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'>Home prepared raw diet</td>
-<td style='text-align: left;'>588 (4%)</td>
-</tr>
-<tr>
 <td style='text-align: left;'>Commercially prepared semi-dry or semi-moist food</td>
 <td style='text-align: left;'>381 (3%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_4_2 Organic secondary component <br> [df_secondary_diet_component_organic]</span></td>
+<td style='text-align: left;'>Home prepared cooked diet</td>
+<td style='text-align: left;'>2958 (21%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Home prepared raw diet</td>
+<td style='text-align: left;'>588 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>1772 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_4_3 Organic secondary diet component <br> [df_secondary_diet_component_organic]</span></td>
 <td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>10301 (73%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Yes</td>
 <td style='text-align: left;'>3743 (27%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_4_3 Grain-free secondary component <br> [df_secondary_diet_component_grain_free]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_4_4 Grain-free secondary diet component (current) <br> [df_secondary_diet_component_grain_free]</span></td>
 <td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>6423 (46%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Yes</td>
 <td style='text-align: left;'>7621 (54%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_4_4 Changes to secondary component <br> [df_secondary_diet_component_change_recent]</span></td>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=6,423)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_4_5 Grain-free secondary diet component (in the past) <br> [df_secondary_diet_component_grain_free_past]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
-<td style='border-bottom: 2px solid grey; text-align: left;'>Yes</td>
-<td style='border-bottom: 2px solid grey; text-align: left;'>2622 (19%)</td>
-</tr>
-</tbody>
-<tfoot><tr><td colspan='2'>
-</td></tr></tfoot>
-</table></div>
-<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
-<thead>
-<tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs whose secondary component is not grain-free</td></tr>
-<tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=6,423)</b></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_5_1 Experience of grain-free secondary <br> [df_secondary_diet_component_grain_free_past]</span></td>
-<td style='text-align: left;'></td>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>5255 (82%)</td>
 </tr>
 <tr>
 <td style='border-bottom: 2px solid grey; text-align: left;'>Yes</td>
@@ -551,15 +395,27 @@ Subset of Dogs whose secondary component is not grain-free</td></tr>
 <div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs whose secondary component has been changed in the past 12 months</td></tr>
+Table df_5: Changes to the secondary diet</td></tr>
 <tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=2,622)</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">df_5_1 Changes to secondary diet component in the last 12 months <br> [df_secondary_diet_component_change_recent]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_6_1 Time when the dog changed diet <br> [df_secondary_diet_component_change_months_ago]</span></td>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>11422 (81%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>2622 (19%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=2,622)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_5_2 Months since secondary diet change <br> [df_secondary_diet_component_change_months_ago]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -611,7 +467,7 @@ Subset of Dogs whose secondary component has been changed in the past 12 months<
 <td style='text-align: left;'>143 (5%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_6_2 Reasons for diet change (Multiple choice) <br> [df_secondary_diet_component_change_]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_5_3 Reason for secondary diet change <br> [df_secondary_diet_component_change_]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -646,18 +502,49 @@ Subset of Dogs whose secondary component has been changed in the past 12 months<
 <tfoot><tr><td colspan='2'>
 </td></tr></tfoot>
 </table></div>
+<h3 class="table-title">
+Treats and supplements<a id="treats-and-supplements"></a>
+</h3>
 <div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs who eat treats at least occasionally</td></tr>
+Table df_6: Treats</td></tr>
 <tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=39,992)</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">df_6_1 Frequency the dog receives treats <br> [df_treats_frequency]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_7_1 Types of treats (Multiple choice) <br> [df_treats]</span></td>
+<td style='text-align: left;'>Three times or more per day</td>
+<td style='text-align: left;'>16706 (35%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Twice per day</td>
+<td style='text-align: left;'>11136 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Occasionally (not daily)</td>
+<td style='text-align: left;'>6297 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Once per day</td>
+<td style='text-align: left;'>5853 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Never</td>
+<td style='text-align: left;'>337 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=39,992)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_6_2 Types of treats <br> [df_treats]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -711,207 +598,19 @@ Subset of Dogs who eat treats at least occasionally</td></tr>
 <div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs who take any supplements at least daily</td></tr>
+Table df_7: Daily dietary supplements</td></tr>
 <tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=18,547)</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">df_7_1 Dog receives daily dietary supplements (any type) <br> [df_daily_supplements]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_8_1 Joint (Glucosamine) <br> [df_daily_supplements_glucosamine]</span></td>
-<td style='text-align: left;'></td>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>18547 (39%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>9671 (52%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>6753 (36%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>2123 (11%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_2 Omega 3 or other fatty acids <br> [df_daily_supplements_omega3]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>7971 (43%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>6627 (36%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>3949 (21%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_3 Joint (Chondroitin Sulfate) <br> [df_daily_supplements_chondroitin]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>9014 (49%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>7608 (41%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>1925 (10%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_4 Vitamins <br> [df_daily_supplements_vitamins]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>10609 (57%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>4787 (26%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>3151 (17%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_5 Probiotics <br> [df_daily_supplements_probiotics]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>10844 (58%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>5039 (27%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>2664 (14%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_6 Fiber <br> [df_daily_supplements_fiber]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>12756 (69%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>4483 (24%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>1308 (7%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_7 Joint (Other) <br> [df_daily_supplements_other_joint]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>13309 (72%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>3994 (22%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>1244 (7%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_8 Antioxidants <br> [df_daily_supplements_antiox]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>14028 (76%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>3326 (18%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>1193 (6%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_9 Skin or coat supplement <br> [df_daily_supplements_non_oil_skin]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>14267 (77%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>2355 (13%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>1925 (10%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_10 Other <br> [df_daily_supplements_other]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>14550 (78%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>3389 (18%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>608 (3%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_11 Taurine or carnitine <br> [df_daily_supplements_taurine]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>15512 (84%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>2509 (14%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>526 (3%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_12 Enzymes <br> [df_daily_supplements_enzyme]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>15600 (84%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>1886 (10%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>1061 (6%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_8_13 Bone meal <br> [df_daily_supplements_bone_meal]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_7_2 Bone meal <br> [df_daily_supplements_bone_meal]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -927,23 +626,155 @@ Subset of Dogs who take any supplements at least daily</td></tr>
 <td style='text-align: left;'>294 (2%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_8_14 Coenzyme Q10 <br> [df_daily_supplements_coenzyme_q10]</span></td>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=18,547)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_3 Joint (Glucosamine) <br> [df_daily_supplements_glucosamine]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>9671 (52%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>6753 (36%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>2123 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_4 Joint (Chondroitin Sulfate) <br> [df_daily_supplements_chondroitin]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
 <td style='text-align: left;'>No</td>
-<td style='text-align: left;'>16776 (90%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>1049 (6%)</td>
+<td style='text-align: left;'>9014 (49%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>722 (4%)</td>
+<td style='text-align: left;'>7608 (41%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_8_15 Supplement to alkalinize urine <br> [df_daily_supplements_alkalinize]</span></td>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>1925 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_5 Joint (Other) <br> [df_daily_supplements_other_joint]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>13309 (72%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>3994 (22%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>1244 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_6 Omega 3 or other fatty acids <br> [df_daily_supplements_omega3]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>7971 (43%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>6627 (36%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>3949 (21%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_7 Skin or coat supplement <br> [df_daily_supplements_non_oil_skin]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>14267 (77%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>2355 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>1925 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_8 Vitamins <br> [df_daily_supplements_vitamins]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>10609 (57%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>4787 (26%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>3151 (17%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_9 Enzymes <br> [df_daily_supplements_enzyme]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>15600 (84%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>1886 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>1061 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_10 Probiotics <br> [df_daily_supplements_probiotics]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>10844 (58%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>5039 (27%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>2664 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_11 Fiber <br> [df_daily_supplements_fiber]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>12756 (69%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>4483 (24%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>1308 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_12 Supplement to alkalinize urine <br> [df_daily_supplements_alkalinize]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -959,7 +790,7 @@ Subset of Dogs who take any supplements at least daily</td></tr>
 <td style='text-align: left;'>250 (1%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_8_16 Supplement to acidify urine <br> [df_daily_supplements_acidify]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_7_13 Supplement to acidify urine <br> [df_daily_supplements_acidify]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -971,8 +802,72 @@ Subset of Dogs who take any supplements at least daily</td></tr>
 <td style='text-align: left;'>692 (4%)</td>
 </tr>
 <tr>
-<td style='border-bottom: 2px solid grey; text-align: left;'>Given as a separate supplement</td>
-<td style='border-bottom: 2px solid grey; text-align: left;'>191 (1%)</td>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>191 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_14 Taurine or carnitine <br> [df_daily_supplements_taurine]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>15512 (84%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>2509 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>526 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_15 Antioxidants <br> [df_daily_supplements_antiox]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>14028 (76%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>3326 (18%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>1193 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_16 Coenzyme Q10 <br> [df_daily_supplements_coenzyme_q10]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>16776 (90%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>1049 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>722 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_7_17 Other daily dietary supplements <br> [df_daily_supplements_other]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>14550 (78%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>3389 (18%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Food contains supplement</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>608 (3%)</td>
 </tr>
 </tbody>
 <tfoot><tr><td colspan='2'>
@@ -981,175 +876,19 @@ Subset of Dogs who take any supplements at least daily</td></tr>
 <div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs who take any supplements less often than every day</td></tr>
+Table df_8: Infrequent (less than daily) dietary supplements</td></tr>
 <tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=4,584)</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">df_8_1 Dog receives infrequent (less than daily) dietary supplements (any type) <br> [df_infrequent_supplements]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_9_1 Omega 3 or other fatty acids <br> [df_infrequent_supplements_omega3]</span></td>
-<td style='text-align: left;'></td>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>4584 (10%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>2701 (59%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>1300 (28%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>583 (13%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_2 Joint (Glucosamine) <br> [df_infrequent_supplements_glucosamine]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>3008 (66%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>1235 (27%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>341 (7%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_3 Probiotics <br> [df_infrequent_supplements_probiotics]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>2990 (65%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>1247 (27%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>347 (8%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_4 Joint (Chondroitin Sulfate) <br> [df_infrequent_supplements_chondroitin]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>3451 (75%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>848 (18%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>285 (6%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_5 Vitamins <br> [df_infrequent_supplements_vitamins]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>3449 (75%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>632 (14%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>503 (11%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_6 Other <br> [df_infrequent_supplements_other]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>3684 (80%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>826 (18%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>74 (2%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_7 Fiber <br> [df_infrequent_supplements_fiber]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>3742 (82%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>557 (12%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>285 (6%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_8 Skin or coat supplement <br> [df_infrequent_supplements_non_oil_skin]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>3824 (83%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>430 (9%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>330 (7%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_9 Joint (Other) <br> [df_infrequent_supplements_other_joint]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>3971 (87%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>447 (10%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>166 (4%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_10 Antioxidants <br> [df_infrequent_supplements_antiox]</span></td>
-<td style='text-align: left;'></td>
-</tr>
-<tr>
-<td style='text-align: left;'>No</td>
-<td style='text-align: left;'>4062 (89%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>381 (8%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>141 (3%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'><span class="row-heading">df_9_11 Bone meal <br> [df_infrequent_supplements_bone_meal]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_8_2 Bone meal <br> [df_infrequent_supplements_bone_meal]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -1165,7 +904,107 @@ Subset of Dogs who take any supplements less often than every day</td></tr>
 <td style='text-align: left;'>100 (2%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_9_12 Enzymes <br> [df_infrequent_supplements_enzyme]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_8_3 Joint (Glucosamine) <br> [df_infrequent_supplements_glucosamine]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>3008 (66%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>1235 (27%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>341 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_4 Joint (Chondroitin Sulfate) <br> [df_infrequent_supplements_chondroitin]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>3451 (75%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>848 (18%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>285 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_5 Joint (Other) <br> [df_infrequent_supplements_other_joint]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>3971 (87%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>447 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>166 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><b>Characteristics</b></td>
+<td style='text-align: left;'><b>No. (%) of subjects<br> (N=4,584)</b></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_6 Omega 3 or other fatty acids <br> [df_infrequent_supplements_omega3]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>2701 (59%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>1300 (28%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>583 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_7 Skin or coat supplement <br> [df_infrequent_supplements_non_oil_skin]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>3824 (83%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>430 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>330 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_8 Vitamins <br> [df_infrequent_supplements_vitamins]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>3449 (75%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>632 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>503 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_9 Enzymes <br> [df_infrequent_supplements_enzyme]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -1181,39 +1020,39 @@ Subset of Dogs who take any supplements less often than every day</td></tr>
 <td style='text-align: left;'>144 (3%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_9_13 Taurine or carnitine <br> [df_infrequent_supplements_taurine]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_8_10 Probiotics <br> [df_infrequent_supplements_probiotics]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
 <td style='text-align: left;'>No</td>
-<td style='text-align: left;'>4243 (93%)</td>
-</tr>
-<tr>
-<td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>275 (6%)</td>
+<td style='text-align: left;'>2990 (65%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>66 (1%)</td>
+<td style='text-align: left;'>1247 (27%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_9_14 Coenzyme Q10 <br> [df_infrequent_supplements_coenzyme_q10]</span></td>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>347 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_11 Fiber <br> [df_infrequent_supplements_fiber]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
 <td style='text-align: left;'>No</td>
-<td style='text-align: left;'>4374 (95%)</td>
+<td style='text-align: left;'>3742 (82%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Food contains supplement</td>
-<td style='text-align: left;'>120 (3%)</td>
+<td style='text-align: left;'>557 (12%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Given as a separate supplement</td>
-<td style='text-align: left;'>90 (2%)</td>
+<td style='text-align: left;'>285 (6%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_9_15 Supplement to alkalinize urine <br> [df_infrequent_supplements_alkalinize]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_8_12 Supplement to alkalinize urine <br> [df_infrequent_supplements_alkalinize]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -1229,7 +1068,7 @@ Subset of Dogs who take any supplements less often than every day</td></tr>
 <td style='text-align: left;'>36 (1%)</td>
 </tr>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_9_16 Supplement to acidify urine <br> [df_infrequent_supplements_acidify]</span></td>
+<td style='text-align: left;'><span class="row-heading">df_8_13 Supplement to acidify urine <br> [df_infrequent_supplements_acidify]</span></td>
 <td style='text-align: left;'></td>
 </tr>
 <tr>
@@ -1241,38 +1080,154 @@ Subset of Dogs who take any supplements less often than every day</td></tr>
 <td style='text-align: left;'>79 (2%)</td>
 </tr>
 <tr>
-<td style='border-bottom: 2px solid grey; text-align: left;'>Given as a separate supplement</td>
-<td style='border-bottom: 2px solid grey; text-align: left;'>34 (1%)</td>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>34 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_14 Taurine or carnitine <br> [df_infrequent_supplements_taurine]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>4243 (93%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>275 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>66 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_15 Antioxidants <br> [df_infrequent_supplements_antiox]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>4062 (89%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>381 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>141 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_16 Coenzyme Q10 <br> [df_infrequent_supplements_coenzyme_q10]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>4374 (95%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food contains supplement</td>
+<td style='text-align: left;'>120 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>90 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_8_17 Other less than daily dietary supplements <br> [df_infrequent_supplements_other]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>3684 (80%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Given as a separate supplement</td>
+<td style='text-align: left;'>826 (18%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Food contains supplement</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>74 (2%)</td>
 </tr>
 </tbody>
 <tfoot><tr><td colspan='2'>
 </td></tr></tfoot>
 </table></div>
+<h3 class="table-title">
+Diet consistency, appetite, and
+weight<a id="diet-consistency,-appetite,-and-weight"></a>
+</h3>
 <div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs whose appetite changed in the past 12 months</td></tr>
+Table df_9: Appetite</td></tr>
 <tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=9,716)</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">df_9_1 Consistency of daily diet <br> [df_diet_consistency]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_10_1 How appetite has changed <br> [df_appetite_change_last_year]</span></td>
-<td style='text-align: left;'></td>
+<td style='text-align: left;'>Very consistent</td>
+<td style='text-align: left;'>35837 (76%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (73%)</td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Somewhat consistent</td>
+<td style='text-align: left;'>4182 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Not at all consistent</td>
+<td style='text-align: left;'>275 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>35 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_9_2 Owner assessment of dog's appetite <br> [df_appetite]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Average (eats without prompting to do so and seems full afterwards)</td>
+<td style='text-align: left;'>22784 (48%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Voracious (always ready for more food)</td>
+<td style='text-align: left;'>15729 (33%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Poor (does not eat without encouragement)</td>
+<td style='text-align: left;'>1816 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_9_3 Appetite changes in the last year <br> [df_appetite_change_last_year]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>37355 (79%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Eats less than usual</td>
-<td style='text-align: left;'>1807 (19%)</td>
+<td style='text-align: left;'>1807 (4%)</td>
 </tr>
 <tr>
-<td style='border-bottom: 2px solid grey; text-align: left;'>Eats more than usual</td>
-<td style='border-bottom: 2px solid grey; text-align: left;'>794 (8%)</td>
+<td style='text-align: left;'>Eats more than usual</td>
+<td style='text-align: left;'>794 (2%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Don't Know</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>373 (1%)</td>
 </tr>
 </tbody>
 <tfoot><tr><td colspan='2'>
@@ -1281,35 +1236,103 @@ Subset of Dogs whose appetite changed in the past 12 months</td></tr>
 <div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr><td colspan='2' style='text-align: left;'>
-Subset of Dogs whose weight changed in the past 12 months</td></tr>
+Table df_10: Weight</td></tr>
 <tr>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>Characteristics</b></th>
-<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><b>No. (%) of subjects<br> (N=11,236)</b></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="row-heading">df_10_1 History of malnourishment <br> [df_ever_malnourished]</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style='text-align: left;'><span class="row-heading">df_11_1 How weight has changed <br> [df_weight_change_last_year]</span></td>
-<td style='text-align: left;'></td>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>31713 (67%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'></td>
-<td style='text-align: left;'>7115 (63%)</td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>5536 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>3080 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_10_2 Dog underweight (current or in the past) <br> [df_ever_underweight]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>31174 (66%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>5386 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>3769 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_10_3 Dog overweight (current or in the past) <br> [df_ever_overweight]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>28400 (60%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>10076 (21%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>1853 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading">df_10_4 Weight changes in the last year <br> [df_weight_change_last_year]</span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>30583 (64%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'></td>
+<td style='text-align: left;'>7115 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>My dog is a puppy who was growing to his/her full size during the past year</td>
+<td style='text-align: left;'>5405 (11%)</td>
 </tr>
 <tr>
 <td style='text-align: left;'>Lost weight</td>
-<td style='text-align: left;'>2175 (19%)</td>
+<td style='text-align: left;'>2175 (5%)</td>
 </tr>
 <tr>
-<td style='border-bottom: 2px solid grey; text-align: left;'>Gained weight</td>
-<td style='border-bottom: 2px solid grey; text-align: left;'>1946 (17%)</td>
+<td style='text-align: left;'>Gained weight</td>
+<td style='text-align: left;'>1946 (4%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Don't know</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>220 (&lt;1%)</td>
 </tr>
 </tbody>
 <tfoot><tr><td colspan='2'>
 </td></tr></tfoot>
 </table></div>
 <div class="cdst-footer">
-Generated on 2024-11-26
+Generated on 2024-12-12
 </div>
 	</div>
 </body>
