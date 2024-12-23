@@ -1,50 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
+:root {
+	--light-gray: #555555;
+	--medium-gray: #444444;
+	--dark-gray: #333333;
+	--dap-purple: #4b2d83;
+	--light-purple: #e4e0f5;
+}
+
 body {
-	background-color: #e4e0f5;
+	background-color: var(--light-purple);
 	color: black;
 	font-family: Roboto, 'Source Sans Pro', sans-serif, Arial;
-	line-height: 1.42857143;
+	line-height: 1.5;
 }
 
 .body-container {
 	max-width: 940px;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 10px auto;
 }
 
 h1 {
-	font-size: 1.5em;
+	font-size: 2em;
+	font-weight: 700;
+	color: var(--dark-gray);
 }
 
 h2 {
-	font-size: 1em;
+	font-size: 1.5em;
+	font-weight: 700;
+	color: var(--dark-gray);
 }
 
 h3 {
-	font-size: 0.98em;
+	font-size: 1.2em;
+	font-weight: 600;
+	margin-top: 15px;
+	color: var(--medium-gray);
 }
 
 p {
-	font-size: 14px;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--light-gray);
 }
 
 a {
-    color: #337ab7;
-    text-decoration: none;
+	color: #337ab7;
+	text-decoration: none;
 }
+
+	a:hover {
+		color: #0056b3;
+		text-decoration: underline;
+	}
 
 /*===== TABLE OF CONTENTS =====*/
 #toc {
 	padding-top: 10px;
 }
 
+	#toc > p {
+		font-size: 14px;
+	}
+
 
 /*====== TABLES =====*/
-.table-title
-{
+.table-title {
 	margin-top: 50px;
 	/* padding-left: 15px; */
 }
@@ -63,28 +86,50 @@ table {
 	font-size: 13px;
 	width: 100%;
 	margin-top: 0.5em !important;
+	border-collapse: collapse;
 }
 
 /* Caption at top of table */
-thead > tr:first-child > td {
-	font-weight: bold;
-	font-size: 14px;
-	padding-bottom: 10px;
+thead > tr:first-child {
+	background-color: var(--dap-purple);
+	color: white;
 }
 
+	thead > tr:first-child > td {
+		font-weight: bold;
+		font-size: 14px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
 /* Column headers */
-thead th {
+thead th,
+tr:has(td span.col-heading-label) {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: rgb(174, 174, 174);
+	font-weight: 700;
+}
+
+span.col-heading-label {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 5px;
-	background-color: rgb(220, 220, 220);
 }
-/* thead > tr:nth-of-type(2) th {	
-} */
 
 tbody tr {
 	line-height: 1.8;
 }
+
+	tbody tr:hover {
+		/* Subtle hover effect on table rows */
+		background-color: var(--light-purple);
+		transition: background-color 0.2s ease-in-out;
+	}
 
 tbody > tr:first-child > td:first-child {
 	padding-top: 10px; /* add space between column header and first data row */
@@ -97,23 +142,32 @@ td:first-child, th:first-child {
 }
 
 
-/* TODO FIX INDENT */
 /* Subheader data rows */
 span.row-heading {
-	padding-left: 6px;
-	 /* Less ident for subheader rows */
-	font-weight: bold;
+	padding-left: 6px; /* Less ident for subheader rows */
+}
+
+span.row-heading-label {
+	color: var(--dark-gray);
+	font-weight: 900;
+}
+
+span.row-heading-variable {
+	color: var(--medium-gray);
+	font-weight: 300;
 }
 
 /* Non-header data rows */
-/* tbody td { */
-tbody > tr:not(:has(span.row-heading)) td {
- 	padding-left: 15px; /* Indent non-header rows */
+tbody > tr:not(:has(span.row-heading)):not(:has(span.col-heading-label)) td {
+	padding-left: 15px; /* Indent non-header rows */
 }
 
 
-
-
+tfoot {
+	font-size: 12px;
+	color: var(--medium-gray);
+	font-style: italic;
+}
 
 /* border between caption and column headers; set from htmlTable::htmlTable() */
 thead > tr > th {
@@ -125,11 +179,11 @@ tr > td { /* border between table body and footnote */
 	/* border-bottom: none !important; */
 }
 
-
-/*===== FOOTER =====*/
+/*===== PAGE FOOTER =====*/
 div.cdst-footer {
 	text-align: center;
-	font-size: 13px;
+	font-size: 12px;
 	margin-top: 40px;
 	margin-bottom: 20px;
+	color: var(--medium-gray);
 }
