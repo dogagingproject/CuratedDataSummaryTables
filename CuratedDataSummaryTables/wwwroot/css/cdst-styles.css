@@ -143,6 +143,10 @@ td:first-child, th:first-child {
 
 
 /* Subheader data rows */
+tr:has(td span.row-heading) {
+	background-color: rgb(229, 223, 223);
+}
+
 span.row-heading {
 	padding-left: 6px; /* Less ident for subheader rows */
 }

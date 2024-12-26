@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <nav class="col-md-3 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
 
@@ -66,6 +66,26 @@
  *@
 
                         <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesOwnerContact" href="/HlesOwnerContact?year=@defaultYear">
+                                <i class="bi bi-person-vcard-fill"></i> Owner Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesDogDemographics" href="/HlesDogDemographics?year=@defaultYear">
+                                <i class="bi bi-star-fill"></i> Dog Demographics
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesPhysicalActivity" href="/HlesPhysicalActivity?year=@defaultYear">
+                                <i class="bi bi-heart-pulse-fill"></i> Physical Activity
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-base-url="/HlesEnvironment" href="/HlesEnvironment?year=@defaultYear">
+                                <i class="bi bi-geo-alt-fill"></i> Environment
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" data-base-url="/HlesBehavior" href="/HlesBehavior?year=@defaultYear">
                                 <i class="bi bi-award-fill"></i> Behavior
                             </a>
@@ -81,13 +101,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-base-url="/HlesDogDemographics" href="/HlesDogDemographics?year=@defaultYear">
-                                <i class="bi bi-star-fill"></i> Dog Demographics
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-base-url="/HlesEnvironment" href="/HlesEnvironment?year=@defaultYear">
-                                <i class="bi bi-geo-alt-fill"></i> Environment
+                            <a class="nav-link" data-base-url="/HlesMedsPreventives" href="/HlesMedsPreventives?year=@defaultYear">
+                                <i class="bi bi-capsule"></i> Meds and Preventives
                             </a>
                         </li>
                         <li class="nav-item">
@@ -96,29 +111,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-base-url="/HlesMedsPreventives" href="/HlesMedsPreventives?year=@defaultYear">
-                                <i class="bi bi-capsule"></i> Meds and Preventives
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-base-url="/HlesOwnerContact" href="/HlesOwnerContact?year=@defaultYear">
-                                <i class="bi bi-person-vcard-fill"></i> Owner Contact
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" data-base-url="/HlesOwnerDemographics" href="/HlesOwnerDemographics?year=@defaultYear">
                                 <i class="bi bi-person-fill"></i> Owner Demographics
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-base-url="/HlesPhysicalActivity" href="/HlesPhysicalActivity?year=@defaultYear">
-                                <i class="bi bi-heart-pulse-fill"></i> Physical Activity
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <main role="main" class="col-md-8 ml-sm-auto col-lg-9 px-4">
                 @RenderBody()
 
                 <!-- Floating Top Button -->
