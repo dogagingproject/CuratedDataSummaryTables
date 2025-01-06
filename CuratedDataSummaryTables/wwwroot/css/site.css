@@ -32,6 +32,82 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    row-gap: 4px;
+    flex-shrink: 1;
+    max-width: 50%;
+}
+
+.logo-sub-container-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    column-gap: 10px;
+    flex-shrink: 1;
+}
+
+.home-dap-logo {
+    /*width: 20%;*/
+    width: clamp(200px, 40%, 250px);
+    margin: 5px;
+    flex-shrink: 1;
+}
+
+.uw-logo {
+    background-color: #4b2d83;
+    width: 100%;
+    max-width: 250px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.tamu-logo, .tufts-logo {
+    width: 100%; 
+    max-width: 100px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.tamu-logo {
+    background-color: #500001;
+    max-width: 110px;
+}
+
+.tufts-logo {
+    background-color: white;
+    padding: 2px;
+    max-width: 70px;
+}
+
+@media (max-width: 600px) {
+    .home-dap-logo {
+        width: 30%;
+    }
+
+    .uw-logo {
+        max-width: 150px;
+    }
+
+    .tamu-logo {
+        max-width: 60px;
+    }
+
+    .tufts-logo {
+        max-width: 45px;
+    }
+}
+
+.home-header {
+    font-size: 1.5rem;
+    margin-top: 25px;
 }
 
 .home-title {
@@ -43,42 +119,8 @@ body {
     width: 98%;
 }
 
-.home-dap-logo {
-    width: 20%;
-    margin: 10px;
-}
-
-.uw-logo {
-    background-color: #4b2d83;
-    width: 25%;
-    height: 50%;
-    padding: 7px;
-    border-radius: 5px;
-}
-
-.tamu-logo {
-    background-color: #500001;
-    width: 15%;
-    height: 50%;
-    padding: 7px;
-    border-radius: 5px;
-}
-
-.tufts-logo {
-    background-color: white;
-    width: 10%;
-    height: 50%;
-    padding: 2px;
-    border-radius: 5px;
-}
-
-.home-header {
-    font-size: 1.5rem;
-    margin-top: 25px;
-}
-
 .nav-dap-logo {
-    width: 40%;
+    width: 35%;
     display: flex;
     margin: auto;
     padding: 5px;
