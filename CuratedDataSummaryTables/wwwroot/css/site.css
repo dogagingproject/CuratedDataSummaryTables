@@ -1,11 +1,19 @@
+:root {
+    --light-gray: #555555;
+    --medium-gray: #444444;
+    --dark-gray: #333333;
+    --dap-purple: #4b2d83;
+    --light-purple: #e4e0f5;
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -13,8 +21,8 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -62,7 +70,7 @@ body {
 }
 
 .uw-logo {
-    background-color: #4b2d83;
+    background-color: var(--dap-purple);
     width: 100%;
     max-width: 250px;
     padding: 7px;
@@ -121,9 +129,17 @@ body {
 
 .nav-dap-logo {
     width: 35%;
+    max-width: 100px;
     display: flex;
     margin: auto;
     padding: 5px;
+    padding-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .nav-dap-logo {
+        width: 10%;
+    }
 }
 
 footer {
@@ -141,13 +157,13 @@ footer {
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
     outline: none;
 }
-    
-#yearDropdown:hover,
-#yearDropdown:focus {
-    background-color: #fff; /* Slightly lighter background on hover */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
-    border-color: #007bff; /* Blue border on focus */
-}
+
+    #yearDropdown:hover,
+    #yearDropdown:focus {
+        background-color: #fff; /* Slightly lighter background on hover */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+        border-color: #007bff; /* Blue border on focus */
+    }
 
 /* Scroll to top button */
 .top-button {
@@ -162,25 +178,13 @@ footer {
     padding: 10px 15px;
     cursor: pointer;
     display: none;
-    box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.3);
 }
 
-.top-button:hover {
-    background-color: #42276B; /* Slightly darker purple on hover */
-}
+    .top-button:hover {
+        background-color: #42276B; /* Slightly darker purple on hover */
+    }
 
-
-
-
-
-/* TODO: where did below come from? in use? can delete?? */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-.dropdown-menu.show {
-    display: block;
+.home-header > .fa-paw {
+    color: var(--dap-purple)
 }
