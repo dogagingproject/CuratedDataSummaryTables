@@ -32,7 +32,7 @@
                         <li class="nav-item nav-link">
                             @{
                                 var defaultYear = Context.Request.Query["year"].ToString() ?? Helpers.Constants.defaultDataYear;
-                                var years = new List<int> { 2023, 2022, 2021};
+                                var years = new List<int> { 2023 };
                                 // Generate the options list as HTML strings
                                 var optionsHtml = new System.Text.StringBuilder();
                                 foreach (var year in years)
@@ -116,7 +116,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - CuratedDataSummaryTables - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2024 - CuratedDataSummaryTables
         </div>
     </footer>
 
