@@ -146,6 +146,10 @@ footer {
     background-color: #f8f9fa;
 }
 
+footer.border-top.footer.text-muted > div.container {
+    margin-left: 15px;
+}
+
 /* Year select box on nav panel */
 #yearDropdown {
     padding: 4px;
@@ -158,12 +162,12 @@ footer {
     outline: none;
 }
 
-    #yearDropdown:hover,
-    #yearDropdown:focus {
-        background-color: #fff; /* Slightly lighter background on hover */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
-        border-color: #007bff; /* Blue border on focus */
-    }
+#yearDropdown:hover,
+#yearDropdown:focus {
+    background-color: #fff; /* Slightly lighter background on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    border-color: #007bff; /* Blue border on focus */
+}
 
 /* Scroll to top button */
 .top-button {
@@ -181,9 +185,9 @@ footer {
     box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.3);
 }
 
-    .top-button:hover {
-        background-color: #42276B; /* Slightly darker purple on hover */
-    }
+.top-button:hover {
+    background-color: #42276B; /* Slightly darker purple on hover */
+}
 
 .home-header > .fa-paw {
     color: var(--dap-purple)
