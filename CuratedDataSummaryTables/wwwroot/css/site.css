@@ -60,10 +60,10 @@ body {
     justify-content: flex-end;
     column-gap: 10px;
     flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .home-dap-logo {
-    /*width: 20%;*/
     width: clamp(200px, 40%, 250px);
     margin: 5px;
     flex-shrink: 1;
@@ -72,27 +72,33 @@ body {
 .uw-logo {
     background-color: var(--dap-purple);
     width: 100%;
-    max-width: 250px;
+    max-width: 320px;
     padding: 7px;
     border-radius: 5px;
 }
 
-.tamu-logo, .tufts-logo {
+.tamu-logo, .tufts-logo, .virginiatech-logo {
     width: 100%; 
-    max-width: 100px;
-    padding: 7px;
+    /*max-width: 100px;*/
     border-radius: 5px;
 }
 
 .tamu-logo {
     background-color: #500001;
-    max-width: 110px;
+    max-width: 100px;
+    padding: 7px;
 }
 
 .tufts-logo {
     background-color: white;
+    max-width: 60px;
     padding: 2px;
-    max-width: 70px;
+}
+
+.virginiatech-logo {
+    background-color: white;
+    max-width: 140px;
+    padding: 2px;
 }
 
 @media (max-width: 600px) {
@@ -110,6 +116,10 @@ body {
 
     .tufts-logo {
         max-width: 45px;
+    }
+
+    .virginiatech-logo {
+        max-width: 80px;
     }
 }
 
