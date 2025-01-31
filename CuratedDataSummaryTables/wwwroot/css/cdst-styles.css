@@ -89,6 +89,11 @@ table {
     border-collapse: collapse;
 }
 
+
+tr {
+    line-height: 1.8;
+}
+
 /* Caption at top of table */
 thead > tr:first-child {
     background-color: var(--dap-purple);
@@ -98,15 +103,16 @@ thead > tr:first-child {
 thead > tr:first-child > td {
     font-weight: bold;
     font-size: 14px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 /* Column headers */
-thead th,
-tr:has(td span.col-heading-label) {
+/* Applies to all <th> or <td> elements in a row that contains .col-heading-label */
+thead tr:has(th span.col-heading-label) > th,
+tbody tr:has(td span.col-heading-label) > td {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 5px;
@@ -114,25 +120,12 @@ tr:has(td span.col-heading-label) {
     background-color: rgb(174, 174, 174);
     font-weight: 700;
 }
-
-span.col-heading-label {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-}
-
-tbody tr {
-    line-height: 1.8;
-}
+    
 
 tbody tr:hover {
     /* Subtle hover effect on table rows */
     background-color: #E1F7E9;
     transition: background-color 0.2s ease-in-out;
-}
-
-tbody > tr:first-child > td:first-child {
-    padding-top: 10px; /* add space between column header and first data row */
 }
 
 /* Give more space to first column, 2nd column will also align across tables */
