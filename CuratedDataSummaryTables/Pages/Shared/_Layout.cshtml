@@ -32,7 +32,7 @@
                         <li class="nav-item nav-link">
                             @{
                                 var defaultYear = Context.Request.Query["year"].ToString() ?? Helpers.Constants.defaultDataYear;
-                                var years = new List<int> { 2023 };
+                                var years = new List<int> { 2024, 2023 };
                                 // Generate the options list as HTML strings
                                 var optionsHtml = new System.Text.StringBuilder();
                                 foreach (var year in years)

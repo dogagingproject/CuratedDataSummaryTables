@@ -2,6 +2,6 @@
 {
     public static class Constants
     {
-        public const string defaultDataYear = "2023";
+        public const string defaultDataYear = "2024";
     }
 }

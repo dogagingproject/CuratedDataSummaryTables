@@ -1,0 +1,2961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HLES_HealthStatus</title>
+	<link href="../../css/cdst-styles.css" rel="stylesheet">
+</head>
+<body>
+	<div class="body-container">
+		<h1>
+About the Health Status Survey
+</h1>
+<p>The Health Status survey collects detailed veterinary health
+histories from participants. Some questions ask about general health
+conditions. Others ask about health conditions that occur in specific
+body systems. Refer to Curated Data for details about date of diagnosis,
+treatment, and ongoing medical followup. NOTE: These are owner-reported
+data, which may or may not be confirmed via veterinary electronic
+medical records.<br><br>Survey Instrument:
+<a href="https://github.com/dogagingproject/dataRelease/blob/master/Survey_Instruments/HLES/DAP_HLES_08_HealthStatus.pdf" target="_blank">HLES
+Health Status</a></p>
+<div id="toc" class="section level2">
+<h2>
+Table of Contents
+</h2>
+<p><a href="#general-health">General health</a><br />
+<a href="#overview-of-congenital-conditions">Overview of congenital
+conditions</a><br />
+<a href="#eye">- Eye</a><br />
+<a href="#ear/nose/throat">- Ear/Nose/Throat</a><br />
+<a href="#oral">- Oral</a><br />
+<a href="#skin">- Skin</a><br />
+<a href="#cardiac">- Cardiac</a><br />
+<a href="#respiratory">- Respiratory</a><br />
+<a href="#gastrointestinal">- Gastrointestinal</a><br />
+<a href="#liver/pancreas">- Liver/Pancreas</a><br />
+<a href="#kidney/urinary">- Kidney/Urinary</a><br />
+<a href="#reproductive">- Reproductive</a><br />
+<a href="#bone/orthopedic">- Bone/Orthopedic</a><br />
+<a href="#brain/neurologic">- Brain/Neurologic</a><br />
+<a href="#endocrine">- Endocrine</a><br />
+<a href="#hematopoietic">- Hematopoietic</a><br />
+<a href="#overview-of-diagnosed-conditions">Overview of diagnosed
+conditions</a><br />
+<a href="#eyeb">- Eye</a><br />
+<a href="#ear/nose/throatb">- Ear/Nose/Throat</a><br />
+<a href="#oralb">- Oral</a><br />
+<a href="#skinb">- Skin</a><br />
+<a href="#cardiacb">- Cardiac</a><br />
+<a href="#respiratoryb">- Respiratory</a><br />
+<a href="#gastrointestinalb">- Gastrointestinal</a><br />
+<a href="#liver/pancreasb">- Liver/Pancreas</a><br />
+<a href="#kidney/urinaryb">- Kidney/Urinary</a><br />
+<a href="#reproductiveb">- Reproductive</a><br />
+<a href="#bone/orthopedicb">- Bone/Orthopedic</a><br />
+<a href="#brain/neurologicb">- Brain/Neurologic</a><br />
+<a href="#endocrineb">- Endocrine</a><br />
+<a href="#hematopoieticb">- Hematopoietic</a><br />
+<a href="#infectious-disease">- Infectious Disease</a><br />
+<a href="#toxin-consumption">- Toxin Consumption</a><br />
+<a href="#trauma">- Trauma</a><br />
+<a href="#immune-mediated">- Immune-mediated</a><br />
+<a href="#overview-of-cancer-diagnoses">Overview of cancer
+diagnoses</a></p>
+</div>
+<h3 class="table-title">
+General health<a id="general-health"></a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Owner assessment of the dog's general health</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Sample size: 50,188</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">General health </span><span class="row-heading-variable">[hs_general_health]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Excellent</td>
+<td style='text-align: left;'>24,979 (50%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Very good</td>
+<td style='text-align: left;'>17,026 (34%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Good</td>
+<td style='text-align: left;'>6,002 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fair</td>
+<td style='text-align: left;'>1,788 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Poor</td>
+<td style='text-align: left;'>331 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Very poor</td>
+<td style='text-align: left;'>62 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Newly diagnosed health conditions (in the last 3 months) </span><span class="row-heading-variable">[hs_new_condition_diagnosed_recently]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>43,618 (87%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>6,570 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Presence of ongoing or chronic medical conditions </span><span class="row-heading-variable">[hs_chronic_condition_present]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>33,557 (67%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>16,631 (33%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Hospitalization for over 24 hours in the past 3 months </span><span class="row-heading-variable">[hs_recent_hospitalization]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>49,356 (98%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>832 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="col-heading-label">Subset sample size: 832</span></td>
+<td style='text-align: left;'><span class="col-heading-sampsize">Count (%)</span></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Reason for hospitalization (Multiple choice) </span><span class="row-heading-variable">[hs_recent_hospitalization_reason_]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>753 (91%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Spay Or Neuter</td>
+<td style='text-align: left;'>95 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dentistry</td>
+<td style='text-align: left;'>21 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Boarding</td>
+<td style='text-align: left;'>17 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="col-heading-label">Sample size: 50,188</span></td>
+<td style='text-align: left;'><span class="col-heading-sampsize">Count (%)</span></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Body system with congenital condition </span><span class="row-heading-variable">[hs_congenital_condition_present]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>47,812 (95%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>2,376 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Body system with diagnosed condition </span><span class="row-heading-variable">[hs_new_condition_diagnosed_recently]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>No</td>
+<td style='text-align: left;'>43,618 (87%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Yes</td>
+<td style='text-align: left;'>6,570 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Use of alternative modalities of veterinary care (Multiple choice) </span><span class="row-heading-variable">[hs_alternative_care_]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>None</td>
+<td style='text-align: left;'>39,947 (80%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Massage</td>
+<td style='text-align: left;'>4,536 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Herbal Medicine</td>
+<td style='text-align: left;'>2,778 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>2,081 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chiropractic</td>
+<td style='text-align: left;'>2,059 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Acupuncture</td>
+<td style='text-align: left;'>1,803 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rehabilitation Therapy</td>
+<td style='text-align: left;'>1,801 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Homeopathy</td>
+<td style='text-align: left;'>1,538 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Traditional Chinese Medicine</td>
+<td style='text-align: left;'>823 (2%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Reiki</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>633 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Overview of congenital
+conditions<a id="overview-of-congenital-conditions"></a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+If owners reported a congenital condition, they are asked to specify the body system(s).*</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 2,235</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition type: </span><span class="row-heading-variable">[hs_condition_type]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Eye</td>
+<td style='text-align: left;'>283 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ear/Nose/Throat</td>
+<td style='text-align: left;'>129 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mouth/Dental/Oral</td>
+<td style='text-align: left;'>164 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Skin</td>
+<td style='text-align: left;'>178 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cardiac</td>
+<td style='text-align: left;'>438 (17%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Respiratory</td>
+<td style='text-align: left;'>87 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Gastrointestinal</td>
+<td style='text-align: left;'>185 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Liver/Pancreas</td>
+<td style='text-align: left;'>46 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Kidney/Urinary</td>
+<td style='text-align: left;'>72 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Reproductive</td>
+<td style='text-align: left;'>212 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bone/Orthopedic</td>
+<td style='text-align: left;'>412 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Brain/Neurologic</td>
+<td style='text-align: left;'>64 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Endocrine</td>
+<td style='text-align: left;'>35 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hematopoietic</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Other Congenital Disorder</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>304 (12%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+*When a body system is selected, the owner is presented with follow-up questions about the specific congenital condition. These data are presented in the tables below. Additionally, owners are asked about medical care their dog received after the condition was identified. See Curated Data for those details.</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Eye<a id="eye"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Eye conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class=col-heading-label>Subset sample size: 283</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class=row-heading><span class=row-heading-label>Condition: </span><span class=row-heading-variable>[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Blindness</td>
+<td style='text-align: left;'>42 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cataracts</td>
+<td style='text-align: left;'>69 (21%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Glaucoma</td>
+<td style='text-align: left;'>17 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Keratoconjunctivitis sicca (KCS)</td>
+<td style='text-align: left;'>7 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Persistent pupillary membrane (PPM)</td>
+<td style='text-align: left;'>18 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Missing one or both eyes</td>
+<td style='text-align: left;'>15 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other eye condition</td>
+<td style='text-align: left;'>162 (49%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>4 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Ear/Nose/Throat<a id="ear/nose/throat"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Ear/Nose/Throat conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 129</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Deafness</td>
+<td style='text-align: left;'>121 (90%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other ear condition</td>
+<td style='text-align: left;'>11 (8%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>2 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Oral<a id="oral"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Oral conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 164</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cleft lip</td>
+<td style='text-align: left;'>17 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cleft palate</td>
+<td style='text-align: left;'>19 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Missing teeth</td>
+<td style='text-align: left;'>41 (23%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other oral condition</td>
+<td style='text-align: left;'>100 (56%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>1 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Skin<a id="skin"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Skin conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 178</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dermoid cysts</td>
+<td style='text-align: left;'>7 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Umbilical hernia (Skin)</td>
+<td style='text-align: left;'>136 (76%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other skin condition</td>
+<td style='text-align: left;'>34 (19%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>2 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Cardiac<a id="cardiac"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Cardiac conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 438</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Aortic/Subaortic stenosis</td>
+<td style='text-align: left;'>33 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Atrial septal defects</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mitral dysplasia</td>
+<td style='text-align: left;'>15 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Murmur</td>
+<td style='text-align: left;'>329 (67%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Patent ductus arteriosus (PDA)</td>
+<td style='text-align: left;'>25 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Persistent right aortic arch</td>
+<td style='text-align: left;'>4 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pulmonic stenosis</td>
+<td style='text-align: left;'>18 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Tricuspid dysplasia</td>
+<td style='text-align: left;'>15 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ventricular septal defects</td>
+<td style='text-align: left;'>11 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other Cardiac</td>
+<td style='text-align: left;'>35 (7%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>3 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Respiratory<a id="respiratory"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Respiratory conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 87</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Stenotic/narrow nares</td>
+<td style='text-align: left;'>42 (42%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Tracheal stenosis (narrowing)</td>
+<td style='text-align: left;'>29 (29%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other respiratory condition</td>
+<td style='text-align: left;'>29 (29%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>1 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Gastrointestinal<a id="gastrointestinal"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Gastrointestinal conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 185</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Atresia ani</td>
+<td style='text-align: left;'>1 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Esophageal achalasia</td>
+<td style='text-align: left;'>2 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Megaesophagus</td>
+<td style='text-align: left;'>13 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Umbilical hernia (Gastrointestinal)</td>
+<td style='text-align: left;'>144 (76%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other gastrointestinal condition</td>
+<td style='text-align: left;'>27 (14%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>2 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Liver/Pancreas<a id="liver/pancreas"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Liver/Pancreas conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 46</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Portosystemic shunt</td>
+<td style='text-align: left;'>18 (39%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other liver condition</td>
+<td style='text-align: left;'>25 (54%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>3 (7%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Kidney/Urinary<a id="kidney/urinary"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Kidney/Urinary conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 72</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Born with one kidney</td>
+<td style='text-align: left;'>2 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ectopic ureter</td>
+<td style='text-align: left;'>12 (17%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Patent urachus</td>
+<td style='text-align: left;'>1 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Renal cysts</td>
+<td style='text-align: left;'>2 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Renal dysplasia</td>
+<td style='text-align: left;'>10 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other kidney condition</td>
+<td style='text-align: left;'>42 (58%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>3 (4%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Reproductive<a id="reproductive"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Reproductive conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 212</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cryptorchid</td>
+<td style='text-align: left;'>175 (82%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hermaphroditism</td>
+<td style='text-align: left;'>5 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hypospadias</td>
+<td style='text-align: left;'>2 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Phimosis</td>
+<td style='text-align: left;'>3 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other reproductive condition</td>
+<td style='text-align: left;'>28 (13%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>1 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Bone/Orthopedic<a id="bone/orthopedic"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Bone/Orthopedic conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 412</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Missing a limb or part of a limb</td>
+<td style='text-align: left;'>20 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Valgus deformity</td>
+<td style='text-align: left;'>45 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Varus deformity</td>
+<td style='text-align: left;'>20 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other orthopedic condition</td>
+<td style='text-align: left;'>334 (79%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>4 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Brain/Neurologic<a id="brain/neurologic"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Brain/Neurologic conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 64</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cerebellar hypoplasia</td>
+<td style='text-align: left;'>2 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hydrocephalus</td>
+<td style='text-align: left;'>8 (12%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other neurologic condition</td>
+<td style='text-align: left;'>55 (82%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>2 (3%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Endocrine<a id="endocrine"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Endocrine conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 35</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Congenital hypothyroidism</td>
+<td style='text-align: left;'>23 (64%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Other endocrine condition</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>13 (36%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Hematopoietic<a id="hematopoietic"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Hematopoietic conditions (congenital)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 12</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Macrothrombocytopenia</td>
+<td style='text-align: left;'>1 (8%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Other Hematopoietic</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>11 (92%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Overview of diagnosed
+conditions<a id="overview-of-diagnosed-conditions"></a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+If owners reported a diagnosed condition, they are asked to specify the body system(s).*</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 39,342</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition type: </span><span class="row-heading-variable">[hs_condition_type]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Eye</td>
+<td style='text-align: left;'>6,331 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ear/Nose/Throat</td>
+<td style='text-align: left;'>5,964 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mouth/Dental/Oral</td>
+<td style='text-align: left;'>13,229 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Skin</td>
+<td style='text-align: left;'>13,658 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cardiac</td>
+<td style='text-align: left;'>2,802 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Respiratory</td>
+<td style='text-align: left;'>1,694 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Gastrointestinal</td>
+<td style='text-align: left;'>7,023 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Liver/Pancreas</td>
+<td style='text-align: left;'>1,668 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Kidney/Urinary</td>
+<td style='text-align: left;'>3,747 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Reproductive</td>
+<td style='text-align: left;'>1,079 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bone/Orthopedic</td>
+<td style='text-align: left;'>8,942 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Brain/Neurologic</td>
+<td style='text-align: left;'>2,269 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Endocrine</td>
+<td style='text-align: left;'>1,505 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hematopoietic</td>
+<td style='text-align: left;'>265 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Infection/Parasites</td>
+<td style='text-align: left;'>13,590 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Toxin Consumption</td>
+<td style='text-align: left;'>5,356 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Trauma</td>
+<td style='text-align: left;'>13,297 (13%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Immune-mediated</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>398 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+*When a body system is selected, the owner is presented with follow-up questions about the specific diagnosis. These data are presented in the tables below. Additionally, owners are asked about medical care their dog received after the condition was identified. See Curated Data for those details.</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Eye<a id="eyeb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Eye conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class=col-heading-label>Subset sample size: 6,331</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class=row-heading><span class=row-heading-label>Condition: </span><span class=row-heading-variable>[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Blindness</td>
+<td style='text-align: left;'>363 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cataracts</td>
+<td style='text-align: left;'>1,863 (25%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Glaucoma</td>
+<td style='text-align: left;'>193 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Keratoconjunctivitis sicca (KCS)</td>
+<td style='text-align: left;'>493 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Third eyelid prolapse (cherry eye)</td>
+<td style='text-align: left;'>339 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Conjunctivitis</td>
+<td style='text-align: left;'>1,375 (18%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Corneal ulcer</td>
+<td style='text-align: left;'>547 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Distichia</td>
+<td style='text-align: left;'>80 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ectropion (eyelid rolled out)</td>
+<td style='text-align: left;'>74 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Entropion (eyelid rolled in)</td>
+<td style='text-align: left;'>302 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Imperforate lacrimal punctum</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Iris cyst</td>
+<td style='text-align: left;'>81 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Juvenile cataracts</td>
+<td style='text-align: left;'>111 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Nuclear sclerosis</td>
+<td style='text-align: left;'>378 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pigmentary uveitis</td>
+<td style='text-align: left;'>32 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Progressive retinal atrophy</td>
+<td style='text-align: left;'>111 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Retinal detachment</td>
+<td style='text-align: left;'>54 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Uveitis</td>
+<td style='text-align: left;'>111 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other eye condition</td>
+<td style='text-align: left;'>1,017 (13%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>46 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Ear/Nose/Throat<a id="ear/nose/throatb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Ear/Nose/Throat conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 5,964</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Deafness</td>
+<td style='text-align: left;'>641 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ear Infection</td>
+<td style='text-align: left;'>3,300 (50%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ear Mites</td>
+<td style='text-align: left;'>447 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Epistaxis (nose bleeds)</td>
+<td style='text-align: left;'>29 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hearing loss (incompletely deaf)</td>
+<td style='text-align: left;'>1,081 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hematoma</td>
+<td style='text-align: left;'>287 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pharyngitis</td>
+<td style='text-align: left;'>24 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rhinitis</td>
+<td style='text-align: left;'>135 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Tonsillitis</td>
+<td style='text-align: left;'>28 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other ear condition</td>
+<td style='text-align: left;'>548 (8%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>69 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Oral<a id="oralb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Oral conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 13,229</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dental calculus (yellow build-up on teeth)</td>
+<td style='text-align: left;'>7,020 (35%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Extracted teeth</td>
+<td style='text-align: left;'>6,449 (32%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fractured teeth</td>
+<td style='text-align: left;'>3,128 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Gingivitis (red, puffy gums)</td>
+<td style='text-align: left;'>1,565 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Masticatory myositis</td>
+<td style='text-align: left;'>15 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Oronasal fistula</td>
+<td style='text-align: left;'>53 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Overbite</td>
+<td style='text-align: left;'>178 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Retained deciduous (baby) teeth</td>
+<td style='text-align: left;'>458 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Sialocele</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Underbite</td>
+<td style='text-align: left;'>669 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other oral condition</td>
+<td style='text-align: left;'>706 (3%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>85 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Skin<a id="skinb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Skin conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 13,658</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Alopecia (hair loss)</td>
+<td style='text-align: left;'>667 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Atopic dermatitis (atopy)</td>
+<td style='text-align: left;'>1,382 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chronic or recurrent hot spots</td>
+<td style='text-align: left;'>1,356 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chronic or recurrent skin infections</td>
+<td style='text-align: left;'>817 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Contact dermatitis</td>
+<td style='text-align: left;'>635 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Discoid lupus erythematosus (DLE) (Skin)</td>
+<td style='text-align: left;'>40 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Flea allergy dermatitis</td>
+<td style='text-align: left;'>656 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fleas</td>
+<td style='text-align: left;'>1,321 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food or medicine allergies that affect the skin</td>
+<td style='text-align: left;'>1,532 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ichthyosis</td>
+<td style='text-align: left;'>27 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Lick granuloma</td>
+<td style='text-align: left;'>495 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Non-specific dermatosis</td>
+<td style='text-align: left;'>580 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Panepidermal pustular pemphigus (PPP) (Skin)</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pemphigus erythematosus (PE) (Skin)</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pemphigus foliaceus (PF) (Skin)</td>
+<td style='text-align: left;'>14 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pemphigus vulgaris (PV) (Skin)</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pododermatitis</td>
+<td style='text-align: left;'>101 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Polymyositis (Skin)</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pruritis (itchy skin)</td>
+<td style='text-align: left;'>2,040 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pyoderma or bacterial dermatitis</td>
+<td style='text-align: left;'>500 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Sarcoptic mange</td>
+<td style='text-align: left;'>212 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Seasonal allergies</td>
+<td style='text-align: left;'>3,323 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Sebaceous adenitis</td>
+<td style='text-align: left;'>27 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Sebaceous cysts</td>
+<td style='text-align: left;'>1,527 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Seborrhea or seborrheic dermatitis (greasy skin)</td>
+<td style='text-align: left;'>123 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Systemic demodectic mange</td>
+<td style='text-align: left;'>241 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Systemic lupus erythematosus (SLE) (Skin)</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ticks</td>
+<td style='text-align: left;'>1,176 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other skin condition</td>
+<td style='text-align: left;'>1,359 (7%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>82 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Cardiac<a id="cardiacb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Cardiac conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 2,802</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Murmur</td>
+<td style='text-align: left;'>2,067 (61%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pulmonic stenosis</td>
+<td style='text-align: left;'>21 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Arrhythmia</td>
+<td style='text-align: left;'>233 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cardiomyopathy</td>
+<td style='text-align: left;'>139 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Congestive heart failure</td>
+<td style='text-align: left;'>227 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Endocarditis</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hypertension (high blood pressure)</td>
+<td style='text-align: left;'>137 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pericardial effusion</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pulmonary hypertension</td>
+<td style='text-align: left;'>43 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Subaortic stenosis</td>
+<td style='text-align: left;'>38 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Valve disease</td>
+<td style='text-align: left;'>268 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other Cardiac</td>
+<td style='text-align: left;'>157 (5%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>42 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Respiratory<a id="respiratoryb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Respiratory conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 1,694</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Stenotic/narrow nares</td>
+<td style='text-align: left;'>91 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Tracheal stenosis (narrowing)</td>
+<td style='text-align: left;'>131 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Acquired or acute respiratory distress syndrome (ARDS)</td>
+<td style='text-align: left;'>17 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chronic or recurrent bronchitis</td>
+<td style='text-align: left;'>122 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chronic or recurrent cough</td>
+<td style='text-align: left;'>373 (19%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chronic or recurrent rhinitis</td>
+<td style='text-align: left;'>80 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Elongated soft palate</td>
+<td style='text-align: left;'>106 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Laryngeal paralysis (Respiratory)</td>
+<td style='text-align: left;'>192 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Lung lobe torsion</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pneumonia</td>
+<td style='text-align: left;'>318 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pulmonary bullae</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Tracheal collapse</td>
+<td style='text-align: left;'>295 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other respiratory condition</td>
+<td style='text-align: left;'>196 (10%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>43 (2%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Gastrointestinal<a id="gastrointestinalb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Gastrointestinal conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 7,023</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Megaesophagus</td>
+<td style='text-align: left;'>31 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Anal sac impaction</td>
+<td style='text-align: left;'>1,162 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bilious vomiting syndrome</td>
+<td style='text-align: left;'>205 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bloat with torsion (GDV)</td>
+<td style='text-align: left;'>119 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chronic or recurrent diarrhea</td>
+<td style='text-align: left;'>1,532 (18%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chronic or recurrent vomiting</td>
+<td style='text-align: left;'>582 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Constipation</td>
+<td style='text-align: left;'>145 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fecal incontinence</td>
+<td style='text-align: left;'>149 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Food or medicine allergies</td>
+<td style='text-align: left;'>1,220 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Foreign body ingestion or blockage</td>
+<td style='text-align: left;'>1,259 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hemorrhagic gastroenteritis (HGE) or stress colitis (acute)</td>
+<td style='text-align: left;'>460 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Idiopathic canine colitis (chronic)</td>
+<td style='text-align: left;'>76 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Irritable bowel syndrome (IBS) or inflammatory bowel disease (IBD)</td>
+<td style='text-align: left;'>648 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Lymphangiectasia</td>
+<td style='text-align: left;'>18 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Malabsorptive disorder</td>
+<td style='text-align: left;'>25 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other allergies</td>
+<td style='text-align: left;'>218 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Protein-losing enteropathy (PLE)</td>
+<td style='text-align: left;'>27 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pyloric stenosis</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other gastrointestinal condition</td>
+<td style='text-align: left;'>748 (9%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>71 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Liver/Pancreas<a id="liver/pancreasb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Liver/Pancreas conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 1,668</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Portosystemic shunt</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Biliary obstruction</td>
+<td style='text-align: left;'>16 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chronic inflammatory liver disease</td>
+<td style='text-align: left;'>156 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Exocrine pancreatic insufficiency (EPI)</td>
+<td style='text-align: left;'>60 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Gall bladder mucocele</td>
+<td style='text-align: left;'>55 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Gall bladder rupture</td>
+<td style='text-align: left;'>9 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Gall bladder surgery</td>
+<td style='text-align: left;'>26 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Microvascular dysplasia (portal vein hypoplasia)</td>
+<td style='text-align: left;'>14 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pancreatitis</td>
+<td style='text-align: left;'>981 (56%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other liver condition</td>
+<td style='text-align: left;'>386 (22%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>40 (2%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Kidney/Urinary<a id="kidney/urinaryb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Kidney/Urinary conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 3,747</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ectopic ureter</td>
+<td style='text-align: left;'>11 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Renal dysplasia</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Acute kidney failure</td>
+<td style='text-align: left;'>106 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bladder prolapse</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chronic kidney disease</td>
+<td style='text-align: left;'>406 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pyelonephritis (kidney infection)</td>
+<td style='text-align: left;'>36 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Kidney stones</td>
+<td style='text-align: left;'>63 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Proteinuria</td>
+<td style='text-align: left;'>122 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Tubular disorder (such as Fanconi syndrome)</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Urethral prolapse</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Urinary crystals or stones in bladder or urethra</td>
+<td style='text-align: left;'>729 (16%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Urinary incontinence</td>
+<td style='text-align: left;'>1,098 (25%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Urinary tract infection (chronic or recurrent)</td>
+<td style='text-align: left;'>1,464 (33%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other kidney condition</td>
+<td style='text-align: left;'>344 (8%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>32 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Reproductive<a id="reproductiveb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Reproductive conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 1,079</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Benign prostatic hyperplasia</td>
+<td style='text-align: left;'>43 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dystocia</td>
+<td style='text-align: left;'>16 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Irregular heat cycle</td>
+<td style='text-align: left;'>46 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mastitis</td>
+<td style='text-align: left;'>47 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Papilloma (genital warts)</td>
+<td style='text-align: left;'>11 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Paraphimosis</td>
+<td style='text-align: left;'>15 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Prostatitis</td>
+<td style='text-align: left;'>53 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Preputial infection</td>
+<td style='text-align: left;'>22 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pseudopregnancy</td>
+<td style='text-align: left;'>81 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pyometra</td>
+<td style='text-align: left;'>112 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Recessed vulva</td>
+<td style='text-align: left;'>292 (25%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Testicular atrophy</td>
+<td style='text-align: left;'>21 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Vaginitis</td>
+<td style='text-align: left;'>153 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other reproductive condition</td>
+<td style='text-align: left;'>228 (20%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>15 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Bone/Orthopedic<a id="bone/orthopedicb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Bone/Orthopedic conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 8,942</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Carpal subluxation syndrome</td>
+<td style='text-align: left;'>30 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cruciate ligament rupture</td>
+<td style='text-align: left;'>1,639 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Degenerative joint disease</td>
+<td style='text-align: left;'>630 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dwarfism</td>
+<td style='text-align: left;'>19 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Elbow dysplasia</td>
+<td style='text-align: left;'>320 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Growth deformity</td>
+<td style='text-align: left;'>67 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hip dysplasia</td>
+<td style='text-align: left;'>1,124 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Intervertebral disc disease (IVDD) (Orthopedic)</td>
+<td style='text-align: left;'>559 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Lameness (chronic or recurrent)</td>
+<td style='text-align: left;'>861 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Osteoarthritis</td>
+<td style='text-align: left;'>2,971 (27%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Osteochondritis dissecans (OCD)</td>
+<td style='text-align: left;'>64 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Osteomyelitis</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Panosteitis</td>
+<td style='text-align: left;'>82 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Patellar luxation</td>
+<td style='text-align: left;'>1,198 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rheumatoid arthritis</td>
+<td style='text-align: left;'>280 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Spondylosis</td>
+<td style='text-align: left;'>219 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other orthopedic condition</td>
+<td style='text-align: left;'>946 (9%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>43 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Brain/Neurologic<a id="brain/neurologicb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Brain/Neurologic conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 2,269</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cauda equina syndrome</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Degenerative myelopathy</td>
+<td style='text-align: left;'>100 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dementia or senility</td>
+<td style='text-align: left;'>292 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Diskospondylitis</td>
+<td style='text-align: left;'>9 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dysautonomia</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fibrocartilaginous embolism (FCE)</td>
+<td style='text-align: left;'>20 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Horner's syndrome</td>
+<td style='text-align: left;'>47 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Intervertebral disc disease (IVDD) (Neurologic)</td>
+<td style='text-align: left;'>200 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Laryngeal paralysis (Neurologic)</td>
+<td style='text-align: left;'>120 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Limb paralysis</td>
+<td style='text-align: left;'>59 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Myasthenia gravis</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Polyneuropathy</td>
+<td style='text-align: left;'>28 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Seizures (including epilepsy)</td>
+<td style='text-align: left;'>994 (39%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Vestibular disease</td>
+<td style='text-align: left;'>239 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Wobbler syndrome</td>
+<td style='text-align: left;'>32 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other neurologic condition</td>
+<td style='text-align: left;'>380 (15%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>16 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Endocrine<a id="endocrineb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Endocrine conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 1,505</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Addison's disease (hypoadrenocorticism; low adrenal function)</td>
+<td style='text-align: left;'>122 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cushing's disease (hyperadrenocorticism; excess adrenal function)</td>
+<td style='text-align: left;'>299 (19%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Diabetes insipidus (rare diabetes which causes water balance problems)</td>
+<td style='text-align: left;'>47 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Diabetes mellitus (common diabetes which causes high blood sugar)</td>
+<td style='text-align: left;'>122 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hypercalcemia (excess calcium in the blood)</td>
+<td style='text-align: left;'>15 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hyperparathyroidism (excess parathyroid function causing high calcium)</td>
+<td style='text-align: left;'>21 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hypoparathyroidism (low parathyroid function causing low calcium)</td>
+<td style='text-align: left;'>40 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hyperthyroidism (excess thyroid function)</td>
+<td style='text-align: left;'>41 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hypothyroidism (low thyroid function)</td>
+<td style='text-align: left;'>831 (53%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other endocrine condition</td>
+<td style='text-align: left;'>27 (2%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>12 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Hematopoietic<a id="hematopoieticb"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Hematopoietic conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 265</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Anemia</td>
+<td style='text-align: left;'>123 (44%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Factor I deficiency</td>
+<td style='text-align: left;'>2 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hemophilia</td>
+<td style='text-align: left;'>5 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Polycythemia</td>
+<td style='text-align: left;'>3 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Splenic hematoma</td>
+<td style='text-align: left;'>24 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Splenic torsion</td>
+<td style='text-align: left;'>5 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Thrombocytopenia (not immune-mediated)</td>
+<td style='text-align: left;'>19 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Thromboembolism</td>
+<td style='text-align: left;'>2 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Von Willebrand's disease</td>
+<td style='text-align: left;'>18 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other Hematopoietic</td>
+<td style='text-align: left;'>61 (22%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>17 (6%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Infectious Disease<a id="infectious-disease"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Infectious Disease (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class=col-heading-label>Subset sample size: 13,590</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class=row-heading><span class=row-heading-label>Condition: </span><span class=row-heading-variable>[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Anaplasmosis</td>
+<td style='text-align: left;'>572 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Aspergillosis</td>
+<td style='text-align: left;'>12 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Babesiosis</td>
+<td style='text-align: left;'>36 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Blastomycosis</td>
+<td style='text-align: left;'>18 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bordetella and/or parainfluenza (kennel cough)</td>
+<td style='text-align: left;'>2,369 (13%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Brucellosis</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Campylobacteriosis</td>
+<td style='text-align: left;'>58 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chagas disease (trypanosomiasis)</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Coccidia</td>
+<td style='text-align: left;'>832 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Coccidioidiomycosis</td>
+<td style='text-align: left;'>64 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cryptococcus</td>
+<td style='text-align: left;'>14 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dermatophytosis (ringworm)</td>
+<td style='text-align: left;'>158 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Distemper</td>
+<td style='text-align: left;'>28 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ehrlichiosis</td>
+<td style='text-align: left;'>453 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fever of unknown origin</td>
+<td style='text-align: left;'>138 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Gastrointestinal parasites</td>
+<td style='text-align: left;'>981 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Giardia</td>
+<td style='text-align: left;'>3,835 (21%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Granuloma</td>
+<td style='text-align: left;'>32 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Heartworm infection</td>
+<td style='text-align: left;'>907 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Histoplasmosis</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hookworms</td>
+<td style='text-align: left;'>1,324 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Influenza</td>
+<td style='text-align: left;'>68 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Isospora</td>
+<td style='text-align: left;'>28 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Leishmaniasis</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Leptospirosis</td>
+<td style='text-align: left;'>77 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Lyme disease</td>
+<td style='text-align: left;'>1,280 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>MRSA/MRSP</td>
+<td style='text-align: left;'>78 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mycobacterium</td>
+<td style='text-align: left;'>18 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Parvovirus</td>
+<td style='text-align: left;'>437 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Plague (Yersinia pestis)</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rocky Mountain Spotted Fever (RMSF)</td>
+<td style='text-align: left;'>49 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Roundworms</td>
+<td style='text-align: left;'>1,466 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Salmonellosis</td>
+<td style='text-align: left;'>15 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Salmon poisoning</td>
+<td style='text-align: left;'>37 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Tapeworms</td>
+<td style='text-align: left;'>1,398 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Toxoplasma</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Tularemia</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Whipworms</td>
+<td style='text-align: left;'>519 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other infectious disease</td>
+<td style='text-align: left;'>631 (3%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>156 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Toxin Consumption<a id="toxin-consumption"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Toxin Consumption (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 5,356</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chocolate</td>
+<td style='text-align: left;'>2,205 (36%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ethylene glycol (antifreeze)</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Grapes or raisins</td>
+<td style='text-align: left;'>840 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ingestion of human medications</td>
+<td style='text-align: left;'>705 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ingestion of recreational drugs</td>
+<td style='text-align: left;'>493 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mouse or rat bait/poison (Bromethalin)</td>
+<td style='text-align: left;'>66 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mouse or rat bait/poison (Calciferol)</td>
+<td style='text-align: left;'>21 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mouse or rat bait/poison (Warfarin)</td>
+<td style='text-align: left;'>194 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mouse or rat bait/poison (Other/Unknown)</td>
+<td style='text-align: left;'>259 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Overdose of medications prescribed to the dog</td>
+<td style='text-align: left;'>214 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other toxin consumption</td>
+<td style='text-align: left;'>1,064 (17%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>69 (1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Trauma<a id="trauma"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Trauma (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Subset sample size: 13,297</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Condition: </span><span class="row-heading-variable">[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Dog bite</td>
+<td style='text-align: left;'>5,144 (30%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bite wound from another animal</td>
+<td style='text-align: left;'>508 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fall from height</td>
+<td style='text-align: left;'>610 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fractured bone (long bone in limb)</td>
+<td style='text-align: left;'>420 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fractured bone (other bone in limb)</td>
+<td style='text-align: left;'>566 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fractured bone (spine)</td>
+<td style='text-align: left;'>40 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fractured bone (rib(s))</td>
+<td style='text-align: left;'>29 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fractured bone (flat bone of head or face)</td>
+<td style='text-align: left;'>30 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Head trauma due to any cause</td>
+<td style='text-align: left;'>271 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hit by car or other vehicle</td>
+<td style='text-align: left;'>699 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Kicked by horse or other large animal</td>
+<td style='text-align: left;'>174 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Laceration</td>
+<td style='text-align: left;'>1,684 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Penetrating wound (such as a stick)</td>
+<td style='text-align: left;'>775 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Proptosis (eye out of socket)</td>
+<td style='text-align: left;'>38 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Snakebite</td>
+<td style='text-align: left;'>277 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Tail injury</td>
+<td style='text-align: left;'>662 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Torn or broken toenail</td>
+<td style='text-align: left;'>2,486 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other trauma</td>
+<td style='text-align: left;'>2,493 (15%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>77 (&lt;1%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+<ul>
+<li>Immune-mediated<a id="immune-mediated"></a>
+</h3></li>
+</ul>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Immune-mediated conditions (diagnosed)</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class=col-heading-label>Subset sample size: 398</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class=row-heading><span class=row-heading-label>Condition: </span><span class=row-heading-variable>[hs_condition]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Autoimmune thyroiditis</td>
+<td style='text-align: left;'>14 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Discoid lupus erythematosus (DLE) (Immune)</td>
+<td style='text-align: left;'>45 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Idiopathic immune-mediated thrombocytopenia (IMT/ITP)</td>
+<td style='text-align: left;'>43 (11%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Immune-mediated hemolytic anemia (IMHA) or autoimmune hemolytic anemia (AIHA)</td>
+<td style='text-align: left;'>36 (9%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Immune-mediated polyarthritis (IMPA)</td>
+<td style='text-align: left;'>41 (10%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pemphigus erythematosus (PE) (Immune)</td>
+<td style='text-align: left;'>4 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pemphigus foliaceus (PF) (Immune)</td>
+<td style='text-align: left;'>9 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pemphigus vulgaris (PV) (Immune)</td>
+<td style='text-align: left;'>1 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Polymyositis (Immune)</td>
+<td style='text-align: left;'>2 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Systemic lupus erythematosus (SLE) (Immune)</td>
+<td style='text-align: left;'>9 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other Immune</td>
+<td style='text-align: left;'>186 (46%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Not specified</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>15 (4%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<h3 class="table-title">
+Overview of cancer diagnoses<a id="overview-of-cancer-diagnoses"></a>
+</h3>
+<div class="table-container"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr><td colspan='2' style='text-align: left;'>
+Dogs with owner-reported Cancer conditions</td></tr>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-label">Sample size: 3,229</span></th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: left;'><span class="col-heading-sampsize">Count (%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Body location of cancer occurrence </span><span class="row-heading-variable">[hs_cancer_locations_]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Adrenal Gland</td>
+<td style='text-align: left;'>38 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Anal Sac</td>
+<td style='text-align: left;'>88 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bladder Or Urethra</td>
+<td style='text-align: left;'>40 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Blood</td>
+<td style='text-align: left;'>28 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Bone Or Joint</td>
+<td style='text-align: left;'>122 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Brain</td>
+<td style='text-align: left;'>23 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cardiac Tissue</td>
+<td style='text-align: left;'>13 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ear</td>
+<td style='text-align: left;'>77 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Esophagus</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Eye</td>
+<td style='text-align: left;'>92 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Gallbladder Or Bile Duct</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Gastrointestinal Tract</td>
+<td style='text-align: left;'>42 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Kidney</td>
+<td style='text-align: left;'>21 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Liver</td>
+<td style='text-align: left;'>95 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Lung</td>
+<td style='text-align: left;'>53 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Lymph Nodes</td>
+<td style='text-align: left;'>125 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mammary Tissue</td>
+<td style='text-align: left;'>160 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Muscle Or Soft Tissue</td>
+<td style='text-align: left;'>653 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Nerve Sheath</td>
+<td style='text-align: left;'>31 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Nose Or Nasal Passage</td>
+<td style='text-align: left;'>35 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Oral Cavity</td>
+<td style='text-align: left;'>199 (6%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>231 (7%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Ovary Or Uterus</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pancreas</td>
+<td style='text-align: left;'>8 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Perianal Area</td>
+<td style='text-align: left;'>53 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Pituitary Gland</td>
+<td style='text-align: left;'>14 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Prostate</td>
+<td style='text-align: left;'>7 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rectum</td>
+<td style='text-align: left;'>41 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Skin Of Limb Or Foot</td>
+<td style='text-align: left;'>487 (15%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Skin Of Trunk Body Head</td>
+<td style='text-align: left;'>1,014 (31%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Spinal Cord</td>
+<td style='text-align: left;'>11 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Spleen</td>
+<td style='text-align: left;'>146 (5%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Testicle</td>
+<td style='text-align: left;'>24 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Thyroid</td>
+<td style='text-align: left;'>37 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Unknown</td>
+<td style='text-align: left;'>44 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Venereal</td>
+<td style='text-align: left;'>24 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="col-heading-label">Sample size: 3,229</span></td>
+<td style='text-align: left;'><span class="col-heading-sampsize">Count (%)</span></td>
+</tr>
+<tr>
+<td style='text-align: left;'><span class="row-heading"><span class="row-heading-label">Type of cancer </span><span class="row-heading-variable">[hs_cancer_types_]</span></span></td>
+<td style='text-align: left;'></td>
+</tr>
+<tr>
+<td style='text-align: left;'>Adenocarcinoma</td>
+<td style='text-align: left;'>81 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Adenoma</td>
+<td style='text-align: left;'>96 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Basal Cell Tumor</td>
+<td style='text-align: left;'>48 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Carcinoma</td>
+<td style='text-align: left;'>94 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Chondrosarcoma</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Cystadenoma</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Epidermoid Cyst</td>
+<td style='text-align: left;'>50 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Epulides</td>
+<td style='text-align: left;'>22 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Fibrosarcoma</td>
+<td style='text-align: left;'>19 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hemangioma</td>
+<td style='text-align: left;'>47 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Hemangiosarcoma</td>
+<td style='text-align: left;'>75 (2%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Histiocytic Sarcoma</td>
+<td style='text-align: left;'>10 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Histiocytoma</td>
+<td style='text-align: left;'>86 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Insulinoma</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Leiomyoma</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Leiomyosarcoma</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Leukemia</td>
+<td style='text-align: left;'>6 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Lipoma</td>
+<td style='text-align: left;'>448 (14%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Lymphoma Lymphosarcoma</td>
+<td style='text-align: left;'>81 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Mast Cell Tumor</td>
+<td style='text-align: left;'>634 (20%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Melanoma</td>
+<td style='text-align: left;'>115 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Meningioma</td>
+<td style='text-align: left;'>5 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Multiple Myeloma</td>
+<td style='text-align: left;'>4 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Osteosarcoma</td>
+<td style='text-align: left;'>42 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Other</td>
+<td style='text-align: left;'>256 (8%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Papilloma</td>
+<td style='text-align: left;'>45 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Peripheral Nerve Sheath Tumor</td>
+<td style='text-align: left;'>17 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Plasmacytoma</td>
+<td style='text-align: left;'>27 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Rhabdomyosarcoma</td>
+<td style='text-align: left;'>0 (0%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Sarcoma</td>
+<td style='text-align: left;'>88 (3%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Sebaceous Adenoma</td>
+<td style='text-align: left;'>41 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Soft Tissue Sarcoma</td>
+<td style='text-align: left;'>141 (4%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Squamous Cell Carcinoma</td>
+<td style='text-align: left;'>46 (1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Thymoma</td>
+<td style='text-align: left;'>3 (&lt;1%)</td>
+</tr>
+<tr>
+<td style='text-align: left;'>Transitional Cell Carcinoma</td>
+<td style='text-align: left;'>22 (1%)</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: left;'>Unknown</td>
+<td style='border-bottom: 2px solid grey; text-align: left;'>882 (27%)</td>
+</tr>
+</tbody>
+<tfoot><tr><td colspan='2'>
+</td></tr></tfoot>
+</table></div>
+<div class="cdst-footer">
+Generated on 2025-02-11
+</div>
+	</div>
+</body>
+</html>
